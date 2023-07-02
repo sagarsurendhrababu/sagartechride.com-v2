@@ -17,7 +17,7 @@ export default function Design() {
     <li onClick={()=>{
       dispatch({
         type:'browserWinArray',
-        payload:'illustractor'
+        payload:'Illustractor'
       })
     }}>
         <img src='../IMG/Illustractor.svg'/>

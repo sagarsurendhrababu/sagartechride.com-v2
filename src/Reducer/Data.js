@@ -6,7 +6,7 @@ export  const Data = {
     cmsSec:false,
     browserWinArray:[]    
 }
-setInterval(()=>{
-    console.log(Data.browserWinArray)
-},2000);
+// setInterval(()=>{
+//     console.log(Data.browserWinArray)
+// },2000);
 
