@@ -3,6 +3,7 @@ import gsap from "gsap";
 import Draggable from "gsap/Draggable";
 import { Context } from '../App';
 import { click } from '@testing-library/user-event/dist/click';
+import { Data } from '../Reducer/Data';
 
 
 
@@ -10,11 +11,6 @@ export default function BrowserWin(props) {
   const [state,dispatch] = useContext(Context);
 
   let allBrowserWin;
-  let lastZindexValue;
-
-  window.addEventListener('click', ()=>{
-    console.log("working");
-  });
 
     useEffect(()=>{        
         gsap.registerPlugin(Draggable);
@@ -27,14 +23,12 @@ export default function BrowserWin(props) {
 
       useEffect(()=>{                
         allBrowserWin = document.querySelectorAll('.browserWin');
-        if(allBrowserWin.length != 0){
-          lastZindexValue = allBrowserWin[allBrowserWin.length-1].style.zIndex;
-          console.log(lastZindexValue);         
-        }    
+      });  
+      
 
-      });     
-  return (    
-    <div className='browserWin'style={{zIndex: 100 + props.indexValue}} >
+  return ( 
+           
+    <div className='browserWin'>
         <div className='headerBrowserWin'>
             <div>
               <span>

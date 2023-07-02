@@ -22,6 +22,18 @@ function maxBrowser(index,array){
     }       
 }
 
+function checkBigZindex(){
+    let ele = document.querySelectorAll(".browserWin");
+    let lastBrowser = ele[ele.length-1];
+    if(lastBrowser != undefined){        
+        Data.checkBrowserZindex.push(lastBrowser.style.zIndex);                       
+    }
+    setTimeout(()=>{
+        let eles = document.querySelectorAll(".browserWin");
+        console.log(eles[eles.length-1].style.zIndex = Data.checkBrowserZindex[Data.checkBrowserZindex.length - 1])
+    },200);
+    
+}
 
 function minimizer(index,array){
     array[index].classList.add('hideBrowser');
@@ -60,8 +72,10 @@ function Reducer(state,action) {
             return{
                 ...state,
                 browserWinArray: addingValues(Data.browserWinArray, action.payload),
-                winStart:false
+                winStart:false,
+                checkBrowserZindex:checkBigZindex()                
             } 
+            
         case 'browserClose':            
         return{
             ...state,
@@ -72,6 +86,7 @@ function Reducer(state,action) {
         
         case 'browserMinimize':
             return minimizer(action.payload, action.objectArray);
+      
 
         default:
             return{

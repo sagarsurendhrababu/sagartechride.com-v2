@@ -4,9 +4,10 @@ export  const Data = {
     designSec:false,
     devSec:false,
     cmsSec:false,
-    browserWinArray:[]    
+    browserWinArray:[],
+    checkBrowserZindex:[] 
 }
 // setInterval(()=>{
-//     console.log(Data.browserWinArray)
+//     console.log(Data.checkBrowserZindex)
 // },2000);
 

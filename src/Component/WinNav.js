@@ -13,7 +13,7 @@ export default function WinNav() {
         arrayAllBrowser[i].classList.add('topBrowser');
         arrayAllBrowser[i].classList.remove('hideBrowser');
        }else{
-        arrayAllBrowser[i].classList.remove('topBrowser')
+        arrayAllBrowser[i].classList.remove('topBrowser');
        }
      })
   }
