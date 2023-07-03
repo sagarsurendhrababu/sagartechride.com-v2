@@ -25,8 +25,9 @@ function maxBrowser(index,array){
 function checkBigZindex(){
     let ele = document.querySelectorAll(".browserWin");
     let lastBrowser = ele[ele.length-1];
-    if(lastBrowser != undefined){        
-        Data.checkBrowserZindex.push(lastBrowser.style.zIndex);                       
+    if(lastBrowser != undefined){   
+        let calcValue = parseInt(lastBrowser.style.zIndex)+1;     
+        Data.checkBrowserZindex.push(calcValue);                       
     }
     setTimeout(()=>{
         let eles = document.querySelectorAll(".browserWin");
@@ -38,7 +39,6 @@ function checkBigZindex(){
 function minimizer(index,array){
     array[index].classList.add('hideBrowser');
 }
-
 
 function Reducer(state,action) {  
     

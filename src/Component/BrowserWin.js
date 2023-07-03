@@ -6,7 +6,6 @@ import { click } from '@testing-library/user-event/dist/click';
 import { Data } from '../Reducer/Data';
 
 
-
 export default function BrowserWin(props) {    
   const [state,dispatch] = useContext(Context);
 
