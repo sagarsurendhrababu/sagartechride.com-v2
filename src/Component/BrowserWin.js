@@ -4,11 +4,12 @@ import Draggable from "gsap/Draggable";
 import { Context } from '../App';
 import { click } from '@testing-library/user-event/dist/click';
 import { Data } from '../Reducer/Data';
+import BrowserContent from './BrowserContent/BrowserContent';
 
 
 export default function BrowserWin(props) {    
   const [state,dispatch] = useContext(Context);
-
+  
   let allBrowserWin;
 
     useEffect(()=>{        
@@ -57,7 +58,9 @@ export default function BrowserWin(props) {
             </div>
             <div>2</div>
         </div>
-        {props.itemName}
+        <div className='contentBrowserWin'>
+              <BrowserContent contenName = {props.itemName}/>
+        </div>
     </div>
   )
 }

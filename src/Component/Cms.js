@@ -1,17 +1,34 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Context } from '../App';
 
 export default function Cms() {
+  const [state,dispatch] = useContext(Context);
   return (
     <ul>
-        <li>
+        <li onClick={()=>{
+            dispatch({
+                type:'browserWinArray',
+                payload:'wordpress'
+            })
+        }}>
             <img src='../IMG/wordpress.svg'/>
             <label>Wordpress</label>
         </li>   
-        <li>
+        <li onClick={()=>{
+            dispatch({
+                type:'browserWinArray',
+                payload:'joomla'
+            })
+        }}>
             <img src='../IMG/joomla.svg'/>
             <label>Joomla</label>
         </li> 
-        <li>
+        <li onClick={()=>{
+            dispatch({
+                type:'browserWinArray',
+                payload:'opencart'
+            })
+        }}>
             <img src='../IMG/opencart.svg'/>
             <label>Opencart</label>
         </li>                

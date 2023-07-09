@@ -80,15 +80,15 @@ export default function WinStartBar() {
                     <img src='../IMG/skype.svg'/>
                     <label>Skype</label>
                  </li>
-                 <li>
+                 <li onClick={()=>{window.open('https://www.linkedin.com/in/sagarsurendhrababu/')}}>
                     <img src='../IMG/linkedin.svg'/>
                     <label>LinedIn</label>
                  </li>
-                 <li>
+                 <li onClick={()=>{window.open('https://www.youtube.com/@sagarsurendhrababu9260/featured')}}>
                     <img src='../IMG/youtube.svg'/>
                     <label>Youtube</label>
                  </li> 
-                 <li>
+                 <li onClick={()=>{window.open('https://drive.google.com/file/d/1Il7az32od0bzTO0YCk7XXkwUXZ63fXTt/view?usp=drive_link')}}>
                     <img src='../IMG/resume.svg'/>
                     <label>My Resume</label>
                  </li>                                  

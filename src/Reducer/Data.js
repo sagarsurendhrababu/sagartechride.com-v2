@@ -7,7 +7,5 @@ export  const Data = {
     browserWinArray:[],
     checkBrowserZindex:[] 
 }
-// setInterval(()=>{
-//     console.log(Data.checkBrowserZindex)
-// },2000);
+
 

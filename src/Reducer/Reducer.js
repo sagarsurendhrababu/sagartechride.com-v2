@@ -31,7 +31,7 @@ function checkBigZindex(){
     }
     setTimeout(()=>{
         let eles = document.querySelectorAll(".browserWin");
-        console.log(eles[eles.length-1].style.zIndex = Data.checkBrowserZindex[Data.checkBrowserZindex.length - 1])
+        eles[eles.length-1].style.zIndex = Data.checkBrowserZindex[Data.checkBrowserZindex.length - 1]
     },200);
     
 }
