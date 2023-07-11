@@ -15,18 +15,18 @@ export default function Welcome() {
   return (
     <div className='welcomeScreen'>
         <span className='t1'>Hi</span>
-        <span className='t2'>I'm thrilled to have you here</span>
-        <span className='t3'>I'm Sagar Surendhranbabu, a passionate <b>frontend developer</b>.</span>
-        <span className='t4'>This website is a showcase of my skills, projects, and creative things.</span>
+        <span className='t2'>Good to see you here</span>
+        <span className='t3'>I'm Sagar <b>Surendhranbabu</b>, a passionate <b>frontend developer</b>.</span>
+        <span className='t4'>This website is a showcase of my skills, projects, and tutorial videos.</span>
         <span className='t5'>I hope you'll find this space informative and inspiring.</span>
         <div className='d-flex gap-3 actionBtns'>
           <button onClick={()=>{
               document.documentElement.requestFullscreen();
-              document.querySelector('.welcomeScreen').style.display = "none";
+              document.querySelector('.welcomeScreen').style.visibility = "hidden";
           }}>Skip</button>
           <button onClick={()=>{
               document.documentElement.requestFullscreen();
-              document.querySelector('.welcomeScreen').style.display = "none";
+              document.querySelector('.welcomeScreen').style.visibility = "hidden";
           }}>Lets Start</button>          
         </div>
     </div>

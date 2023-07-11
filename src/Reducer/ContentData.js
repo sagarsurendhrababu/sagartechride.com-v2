@@ -72,5 +72,31 @@ export const ContentData =[
         subtitle:'Youtube is a cloud-based design and prototyping tool that is widely used by UI/UX designers, product teams, and design agencies. It offers a collaborative environment where multiple team members can work simultaneously on the same project, making it ideal for remote collaboration.',
         images:['opencart1.jpg','opencart2.jpg','opencart3.jpg'], 
         iframe:true,         
-    }                         
+    },
+    {
+        id:'profile',
+        title:'profile',
+        subtitle:'Youtube is a cloud-based design and prototyping tool that is widely used by UI/UX designers, product teams, and design agencies. It offers a collaborative environment where multiple team members can work simultaneously on the same project, making it ideal for remote collaboration.',
+        subtitle:'Description',
+
+    },
+    {
+        id:'document',
+        title:'document',
+        subtitle:'Description',
+
+    },
+    {
+        id:'gallery',
+        title:'gallery',
+        subtitle:'Description',
+
+    },
+    {
+        id:'settings',
+        title:'settings',
+        subtitle:'Description',
+
+    } 
+
 ]

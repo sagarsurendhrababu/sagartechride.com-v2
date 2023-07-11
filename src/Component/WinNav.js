@@ -1,9 +1,24 @@
-import React, { useContext,useEffect } from 'react'
+import React, { useContext,useEffect, useState } from 'react'
 import WinStartBar from './WinStartBar';
 import { Context } from '../App';
 import { Data } from '../Reducer/Data';
 
 export default function WinNav() {
+
+  const [currentDateTime, setCurrentDateTime] = useState(new Date());
+
+  useEffect(() => {
+    // Update the current date and time every second
+    const interval = setInterval(() => {
+      setCurrentDateTime(new Date());
+    }, 1000);
+    // Clean up the interval when the component unmounts
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+
   const [state,dispatch] = useContext(Context);
 
   function getBrowserOpen(n){
@@ -46,8 +61,8 @@ export default function WinNav() {
         <a href="#"><img src="../IMG/speaker-icon.svg"/></a>
         <a href="#">ENG</a>
         <div className='date-time'>
-          <span>03:21 PM</span>
-          <span>18-05-2023</span>
+          <span>{currentDateTime.toLocaleTimeString()}</span>
+          <span>{currentDateTime.toLocaleDateString()}</span>
         </div>               
         <a href="#"><img src="../IMG/chat-icon.svg"/></a>
     </div>  

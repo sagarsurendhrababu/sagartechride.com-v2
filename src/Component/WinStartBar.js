@@ -15,19 +15,41 @@ export default function WinStartBar() {
                 </li>
             </ul>
             <ul>
-                <li>
+                <li onClick={()=>{
+                   dispatch({
+                    type:'browserWinArray',
+                    payload:'profile',
+                   })
+                }}>
                     <img src='../IMG/profileIcon.svg'/>
                 </li>                 
-                <li>
+                <li onClick={()=>{
+                   dispatch({
+                    type:'browserWinArray',
+                    payload:'document',
+                   })
+                }}>
                     <img src='../IMG/docIcon.svg'/>
                 </li>                
-                <li>
+                <li onClick={()=>{
+                   dispatch({
+                    type:'browserWinArray',
+                    payload:'gallery',
+                   })
+                }}>
                     <img src='../IMG/imgIcon.svg'/>
                 </li>
-                <li>
+                <li onClick={()=>{
+                   dispatch({
+                    type:'browserWinArray',
+                    payload:'settings',
+                   })
+                }}>
                     <img src='../IMG/settingIcon.svg'/>
                 </li>
-                <li>
+                <li onClick={()=>{
+                    document.querySelector('.welcomeScreen').style.visibility="visible";
+                }}>
                     <img src='../IMG/winPower.svg'/>
                 </li>                                
             </ul> 
