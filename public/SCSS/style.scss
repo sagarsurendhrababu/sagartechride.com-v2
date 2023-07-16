@@ -1,8 +1,13 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/bootstrap-icons/font/bootstrap-icons.scss';
 @import './ScrollBarStyle.css';
 
-*{margin: 0; padding: 0; box-sizing: border-box;}
+@font-face {
+    font-family: 'bootstrap-icons';
+    src: url(../fonts/bootstrap-icons.woff);
+}
 
+*{margin: 0; padding: 0; box-sizing: border-box;}
 
 .App{
     width: 100%;
@@ -247,6 +252,13 @@
                 }
                 &:nth-child(2){
                     border-bottom: 1px solid #b8b8b8;
+                    .headerTopMenu{
+                        display: flex;
+                        list-style: none;
+                        &>li{
+                            padding: 0 1rem;
+                        }
+                    }
                 }
             }
         }
@@ -256,12 +268,6 @@
             overflow-y: scroll;
             overflow-x: hidden;
             padding: 20px;
-
-            &>div{
-                display: flex;
-                flex-direction: column;
-                gap:2rem;
-            }
               /* Track */
             &::-webkit-scrollbar-track {
                 background: #a0c5d7; 
@@ -280,6 +286,9 @@
         top:0!important; 
         left:0!important; 
         transform: translate3d(0,0,0)!important;
+        .contentBrowserWin{
+         height: calc(100% - 107px);  
+        }
     }
     .winNavMinBrowser{
         height: 100%;
@@ -306,4 +315,63 @@
     .hideBrowser{
         display: none;
     }
+    .infoNavBox{
+        height:100%;
+        .infoNav{
+            padding: 2rem;
+            &>h5{
+                font-size: 15px;
+                margin-bottom: 2rem;
+            }
+            &>ul{
+                margin: 0;
+                padding-left: 0;
+                &>li{
+                list-style: none;
+                list-style-position: inside;                
+                font-size: 1rem;
+                padding: 1rem;
+                margin:.2rem 0;
+                &:hover{
+                    background-color: #e5eff7;
+                }               
+                &>i{
+                    margin-right: 1rem;
+                }            
+            }
+            }
+        }
+        .infoCon{
+            padding: 2rem;
+            background-color: #fff;
+            &>h3{
+                font-weight: 300;
+            }
+            &>h6{
+                font-size: 14px;
+                color:#567cc3;
+            }
+            &>img{
+                margin: 1rem 0;
+            }
+            &>p{
+                margin-top: 2rem;
+            }
+            .profPic{
+                height: 150px;
+            }
+        }
+    }
+    .spaceHeight{
+        height: 3rem;
+        width: 100%;
+        display: block;        
+    }
+    .smallIcon{
+        height: 50px;
+        margin-right: 1rem;
+    }
+    .activeTab{
+        background-color: #e5eff7!important;
+    } 
 }

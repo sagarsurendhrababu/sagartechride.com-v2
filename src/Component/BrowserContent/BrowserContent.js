@@ -1,5 +1,7 @@
 import React from 'react';
 import Carousel from './Carousel';
+import LayoutSecond from './LayoutSecond';
+import CommonLayout from './CommonLayout';
 import {ContentData} from '../../Reducer/ContentData';
 
 export default function BrowserContent(props) {
@@ -7,13 +9,14 @@ export default function BrowserContent(props) {
   let subTitle;
   let imgArray;
   let iframeFlag;
+  let layout;
   ContentData.map(e=>{
     if(props.contenName === e.id){
-      title = e.id;
-      subTitle = e.subtitle;
+      title = e.title;
       subTitle = e.subtitle;
       imgArray = e.images;
       iframeFlag = e.iframe;
+      layout = e.layout;
     }
   });
 
@@ -25,10 +28,12 @@ export default function BrowserContent(props) {
         <iframe src='https://stackoverflow.com/questions/64266421/displaying-linkedin-content-with-iframe' frameborder="1" ></iframe>
       </div> : ''
     }
-      <div className ='col-12'>
-        <h1>{title}</h1>
-        <h4>{subTitle}</h4>
-      </div>
+    {
+      title != null? <CommonLayout title={title} subTitle={subTitle}/> : ''
+    }
+    {
+      layout != null? <LayoutSecond/> : ''
+    }
     </>
   )
 }

@@ -4,13 +4,13 @@ import gsap from "gsap";
 
 export default function Welcome() {
   useEffect(()=>{
-    let timeLine = gsap.timeline();
-    timeLine.from(".t1", {y:150, duration:1, opacity:0, ease:"back"})
-    timeLine.from(".t2", {y:150, duration:1, opacity:0, ease:"back"})
-    timeLine.from(".t3", {y:150, duration:1, opacity:0, ease:"back"})
-    timeLine.from(".t4", {y:150, duration:1, opacity:0, ease:"back"})
-    timeLine.from(".t5", {y:150, duration:1, opacity:0, ease:"back"})    
-    timeLine.from(".actionBtns", {y:150, duration:1, opacity:0, ease:"back"})
+    // let timeLine = gsap.timeline();
+    // timeLine.from(".t1", {y:150, duration:1, opacity:0, ease:"back"})
+    // timeLine.from(".t2", {y:150, duration:1, opacity:0, ease:"back"})
+    // timeLine.from(".t3", {y:150, duration:1, opacity:0, ease:"back"})
+    // timeLine.from(".t4", {y:150, duration:1, opacity:0, ease:"back"})
+    // timeLine.from(".t5", {y:150, duration:1, opacity:0, ease:"back"})    
+    // timeLine.from(".actionBtns", {y:150, duration:1, opacity:0, ease:"back"})
   })
   return (
     <div className='welcomeScreen'>

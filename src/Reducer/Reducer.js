@@ -14,11 +14,17 @@ function removeValues(array,val){
       }         
 }
 
-function maxBrowser(index,array){
+function maxBrowser(index,array,values){
     if(array[index].classList.contains('maximizeBrowser')){
-        array[index].classList.remove('maximizeBrowser');
+        array[index].classList.remove('maximizeBrowser'); 
+        return{
+            ...values
+        }               
     }else{
-        array[index].classList.add('maximizeBrowser');
+        array[index].classList.add('maximizeBrowser'); 
+        return{
+            ...values
+        }       
     }       
 }
 
@@ -36,8 +42,11 @@ function checkBigZindex(){
     
 }
 
-function minimizer(index,array){
+function minimizer(index,array,values){
     array[index].classList.add('hideBrowser');
+    return{
+        ...values
+    } 
 }
 
 function Reducer(state,action) {  
@@ -77,17 +86,37 @@ function Reducer(state,action) {
             } 
             
         case 'browserClose':            
-        return{
-            ...state,
-            browserWinArray: removeValues(Data.browserWinArray, action.payload),            
-        }  
+            return{
+                ...state,
+                browserWinArray: removeValues(Data.browserWinArray, action.payload),            
+            }  
         case 'browserMaximize':
-            return maxBrowser(action.payload, action.objectArray);
+            return maxBrowser(action.payload, action.objectArray,state);
         
         case 'browserMinimize':
-            return minimizer(action.payload, action.objectArray);
+            return minimizer(action.payload, action.objectArray,state);
       
-
+        case 'tabActionInfo':           
+            return{
+                ...state,
+                myinfo:action.payload,
+                emailAccount:false,
+                socialMedia:false,                
+            } 
+        case 'tabActionEmail':           
+            return{
+                ...state,
+                emailAccount:action.payload,
+                myinfo:false, 
+                socialMedia:false,               
+            }            
+        case 'tabActionSocial':
+            return{
+                ...state,
+                socialMedia:action.payload,
+                emailAccount:false, 
+                myinfo:false,               
+            }                       
         default:
             return{
                 ...state,

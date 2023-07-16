@@ -5,7 +5,12 @@ export  const Data = {
     devSec:false,
     cmsSec:false,
     browserWinArray:[],
-    checkBrowserZindex:[] 
+    checkBrowserZindex:[],
+    myinfo:true, 
+    emailAccount:false, 
+    socialMedia:false,
 }
 
-
+setInterval(()=>{
+    console.log(Data.myinfo);
+},2000)

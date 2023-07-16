@@ -56,7 +56,14 @@ export default function BrowserWin(props) {
                 </ul>
               </span>
             </div>
-            <div>2</div>
+            <div>
+              <ul className='headerTopMenu'>
+                  <li>File</li>
+                  <li>Home</li>
+                  <li>Share</li>
+                  <li>View</li>
+              </ul>
+            </div>
         </div>
         <div className='contentBrowserWin'>
               <BrowserContent contenName = {props.itemName}/>
