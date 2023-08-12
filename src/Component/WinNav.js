@@ -39,8 +39,9 @@ export default function WinNav() {
     <div className="col-sm-1 d-sm-flex winNavLeft">
         <a href="#" onClick={()=>{dispatch({
           type:'WinStartBtn',
-          payload:!state.winStart
-        })}}><img src="../IMG/windows-icon.svg"/></a>
+          payload:!state.winStart          
+        });        
+        }}><img src="../IMG/windows-icon.svg"/></a>
         <a href="#"><img src="../IMG/windows-search-icon.svg"/></a>
     </div>
     <div className='col-sm-8 d-sm-flex winNavMinBrowser'>

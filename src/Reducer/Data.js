@@ -11,6 +11,3 @@ export  const Data = {
     socialMedia:false,
 }
 
-setInterval(()=>{
-    console.log(Data.myinfo);
-},2000)

@@ -24,15 +24,13 @@ export default function BrowserWin(props) {
       useEffect(()=>{                
         allBrowserWin = document.querySelectorAll('.browserWin');
       });  
-      
-
   return ( 
            
     <div className='browserWin'>
         <div className='headerBrowserWin'>
             <div>
               <span>
-                <img src='../IMG/folder-small.svg'/>
+                <img className='browserIcon' src={`../IMG/${Data.browserWinArray[0]}.svg`}/>
               </span>
               <span>
                 <ul>
@@ -55,14 +53,6 @@ export default function BrowserWin(props) {
 
                 </ul>
               </span>
-            </div>
-            <div>
-              <ul className='headerTopMenu'>
-                  <li>File</li>
-                  <li>Home</li>
-                  <li>Share</li>
-                  <li>View</li>
-              </ul>
             </div>
         </div>
         <div className='contentBrowserWin'>

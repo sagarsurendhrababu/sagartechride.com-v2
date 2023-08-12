@@ -224,7 +224,7 @@
         left: 10%;
         .headerBrowserWin{
             width: 100%;
-            height: 60px;
+            height: 30px;
             display: flex;
             flex-direction: column;
             &>div{
@@ -234,6 +234,10 @@
                     justify-content: space-between;
                     &>span{
                         height: 100%;
+                        .browserIcon{
+                            height: 25px;
+                            margin-left: 2.5px;
+                        }
                         &>ul{
                             list-style: none;
                             display: flex;
@@ -252,19 +256,12 @@
                 }
                 &:nth-child(2){
                     border-bottom: 1px solid #b8b8b8;
-                    .headerTopMenu{
-                        display: flex;
-                        list-style: none;
-                        &>li{
-                            padding: 0 1rem;
-                        }
-                    }
                 }
             }
         }
         .contentBrowserWin{
             background-color: rgb(216, 230, 242);
-            height: calc(100% - 60px);
+            height: calc(100% - 30px);
             overflow-y: scroll;
             overflow-x: hidden;
             padding: 20px;
