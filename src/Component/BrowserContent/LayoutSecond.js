@@ -9,7 +9,7 @@ export default function LayoutSecond() {
   const[state,dispatch] = useContext(Context)
   return (
     <div className='d-flex infoNavBox'>
-        <div className='col-5 infoNav'>
+        <div className='col-sm-5 infoNav'>
             <h5>Accounts</h5>
             <ul>
                 <li className={state.myinfo? 'activeTab' : ''}  onClick={()=>{dispatch({
@@ -29,7 +29,7 @@ export default function LayoutSecond() {
                 <li><i className="bi bi-people-fill"></i>Family & Others</li>
             </ul>
         </div>
-        <div className='col-7 bg-light infoCon'>
+        <div className='col-sm-7 bg-light infoCon'>
             {state.myinfo? <MyInfo/> : ''}
             {state.emailAccount? <EmailAccount/> : ''} 
             {state.socialMedia? <SocialMedia/> : ''}            

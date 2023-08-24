@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import gsap from "gsap";
 import Draggable from "gsap/Draggable";
 import { Context } from '../App';
+import {ContentData} from '../Reducer/ContentData';
 import { click } from '@testing-library/user-event/dist/click';
 import { Data } from '../Reducer/Data';
 import BrowserContent from './BrowserContent/BrowserContent';
@@ -9,7 +10,14 @@ import BrowserContent from './BrowserContent/BrowserContent';
 
 export default function BrowserWin(props) {    
   const [state,dispatch] = useContext(Context);
-  
+  let icons;
+  ContentData.map(e=>{
+    if(props.itemName === e.id){
+      icons = e.icon;
+    }
+  });
+
+
   let allBrowserWin;
 
     useEffect(()=>{        
@@ -24,13 +32,13 @@ export default function BrowserWin(props) {
       useEffect(()=>{                
         allBrowserWin = document.querySelectorAll('.browserWin');
       });  
-  return ( 
-           
+
+  return (            
     <div className='browserWin'>
         <div className='headerBrowserWin'>
             <div>
               <span>
-                <img className='browserIcon' src={`../IMG/${Data.browserWinArray[0]}.svg`}/>
+                <img className='browserIcon' src={`../IMG/${icons}`}/>
               </span>
               <span>
                 <ul>

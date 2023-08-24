@@ -4,7 +4,8 @@ import BrowserWin from './BrowserWin';
 import { Data } from '../Reducer/Data';
 
 export default function WinDesktop() {
-  const [state,dispatch]=useContext(Context);  
+  const [state,dispatch]=useContext(Context); 
+
   return (
     <div className="winDesktop" id='displayContainer' onClick={()=>{
       dispatch({

@@ -11,7 +11,7 @@ function App() {
   return (
     <Context.Provider value={[state,dispatch]}>      
       <div className='App'>
-        <Welcome/>
+        <Welcome/>        
         <WinDesktop/>
         <WinNav/>
       </div>

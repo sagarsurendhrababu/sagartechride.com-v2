@@ -2,24 +2,21 @@ import React, { useContext,useEffect, useState } from 'react'
 import WinStartBar from './WinStartBar';
 import { Context } from '../App';
 import { Data } from '../Reducer/Data';
+import {ContentData} from '../Reducer/ContentData';
 
-export default function WinNav() {
-
-  const [currentDateTime, setCurrentDateTime] = useState(new Date());
-
-  useEffect(() => {
-    // Update the current date and time every second
-    const interval = setInterval(() => {
-      setCurrentDateTime(new Date());
-    }, 1000);
-    // Clean up the interval when the component unmounts
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
-
+export default function WinNav(){
 
   const [state,dispatch] = useContext(Context);
+ 
+  function checkIcon(ele){
+    let icons;
+    ContentData.map(e=>{
+      if(ele === e.id){
+        icons = e.icon;
+      }
+    });
+    return icons;
+  }
 
   function getBrowserOpen(n){
      const arrayAllBrowser = document.querySelectorAll('.browserWin');
@@ -41,16 +38,18 @@ export default function WinNav() {
           type:'WinStartBtn',
           payload:!state.winStart          
         });        
-        }}><img src="../IMG/windows-icon.svg"/></a>
+        }}>
+        <img src="../IMG/windows-icon.svg"/>
+        </a>
         <a href="#"><img src="../IMG/windows-search-icon.svg"/></a>
     </div>
     <div className='col-sm-8 d-sm-flex winNavMinBrowser'>
         <ul className='col-sm-12 d-sm-flex'>
           {
-          Data.browserWinArray.map((item,index)=>(
-            <li key={item} onClick={()=>{getBrowserOpen(index)}}>
-              <img src={`../IMG/${item}.svg`}/>
-            </li>           
+          Data.browserWinArray.map((item,index)=>(                       
+            <li key={item} onClick={()=>{getBrowserOpen(index);}}>                           
+              <img className='browserIconShow' src={`../IMG/${checkIcon(item)}`}/>
+            </li>
            ))
           }           
         </ul>
@@ -62,8 +61,8 @@ export default function WinNav() {
         <a href="#"><img src="../IMG/speaker-icon.svg"/></a>
         <a href="#">ENG</a>
         <div className='date-time'>
-          <span>{currentDateTime.toLocaleTimeString()}</span>
-          <span>{currentDateTime.toLocaleDateString()}</span>
+          <span></span>
+          <span></span>
         </div>               
         <a href="#"><img src="../IMG/chat-icon.svg"/></a>
     </div>  
