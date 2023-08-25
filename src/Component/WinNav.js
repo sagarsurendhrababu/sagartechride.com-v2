@@ -37,7 +37,8 @@ export default function WinNav(){
         <a href="#" onClick={()=>{dispatch({
           type:'WinStartBtn',
           payload:!state.winStart          
-        });        
+        });  
+        document.documentElement.requestFullscreen();      
         }}>
         <img src="../IMG/windows-icon.svg"/>
         </a>

@@ -9,5 +9,7 @@ export  const Data = {
     myinfo:true, 
     emailAccount:false, 
     socialMedia:false,
+    closeBigVideo:false,
+    smallVideo:true,
 }
 

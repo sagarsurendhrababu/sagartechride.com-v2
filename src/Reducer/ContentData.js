@@ -109,6 +109,18 @@ export const ContentData =[
         title:'settings',
         subtitle:'Description',
         icon:'folder.svg',
-    } 
+    },
+    {
+        id:'pc',
+        title:'This PC',
+        subtitle:'Description',
+        icon:'thisPC.svg',
+    },
+    {
+        id:'games',
+        title:'Games',
+        subtitle:'Description',
+        icon:'myGames.svg',
+    },    
 
 ]
