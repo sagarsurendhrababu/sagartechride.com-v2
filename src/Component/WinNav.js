@@ -33,7 +33,7 @@ export default function WinNav(){
   return (
     <div className="winNav">      
       {state.winStart? <WinStartBar/> : ''}
-    <div className="col-sm-1 d-sm-flex winNavLeft">
+    <div className="col-sm-1 d-flex winNavLeft">
         <a href="#" onClick={()=>{dispatch({
           type:'WinStartBtn',
           payload:!state.winStart          
@@ -55,7 +55,7 @@ export default function WinNav(){
           }           
         </ul>
     </div>
-    <div className="col-sm-3 d-sm-flex justify-content-sm-end winNavRight">
+    <div className="col-sm-3 d-flex justify-content-sm-end winNavRight">
         <a href="#"><img src="../IMG/arrow-up-icon.svg"/></a>
         <a href="#"><img src="../IMG/battery-icon.svg"/></a>
         <a href="#"><img src="../IMG/wifi-icon.svg"/></a>

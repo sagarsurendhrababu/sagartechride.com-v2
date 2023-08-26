@@ -15,7 +15,7 @@ export default function Videos() {
         <span className='minPlayBox' onClick={() => {
           state.smallVideo = false;
         }}><i class="bi bi-dash"></i></span>
-        <video controls width="230" height="100%" autoPlay loop muted>
+        <video  width="230" height="100%" autoPlay loop muted>
         <source src="./video/sagar-intro.mp4" type="video/mp4" />          
         </video>
     </div>

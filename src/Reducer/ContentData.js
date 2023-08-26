@@ -121,6 +121,24 @@ export const ContentData =[
         title:'Games',
         subtitle:'Description',
         icon:'myGames.svg',
-    },    
+    },  
+    {
+        id:'resume',
+        title:'My Resume',
+        subtitle:'Description',
+        icon:'myResume.svg',
+    },   
+    {
+        id:'myworks',
+        title:'My Works',
+        subtitle:'Description',
+        icon:'myWorks.svg',
+    },
+    {
+        id:'tutorials',
+        title:'Tutorial Videos',
+        subtitle:'Description',
+        icon:'tutorialVideos.svg',
+    },             
 
 ]
