@@ -109,14 +109,59 @@ function Reducer(state,action) {
                 emailAccount:action.payload,
                 myinfo:false, 
                 socialMedia:false,               
-            }            
+            }             
         case 'tabActionSocial':
             return{
                 ...state,
                 socialMedia:action.payload,
                 emailAccount:false, 
                 myinfo:false,               
-            }                       
+            }  
+        case 'tabActionObjective':
+            return{
+                ...state,
+                objective:action.payload,
+                workExp:false,
+                skills:false,
+                portfolio:false,
+                education:false,                
+        }
+        case 'tabActionWorkExp':
+            return{
+                ...state,
+                workExp:action.payload,
+                objective:false,
+                skills:false,
+                portfolio:false,
+                education:false,               
+        }
+        case 'tabActionSkills':
+            return{
+                ...state,
+                skills:action.payload,
+                objective:false,
+                workExp:false,
+                portfolio:false,
+                education:false,              
+        }
+        case 'tabActionPortfolio':
+            return{
+                ...state,
+                portfolio:action.payload,
+                objective:false,
+                workExp:false,
+                skills:false,
+                education:false,               
+        } 
+        case 'tabActionEducation':
+            return{
+                ...state,
+                education:action.payload,
+                objective:false,
+                workExp:false,
+                skills:false,
+                portfolio:false,               
+        }                                                                                
         default:
             return{
                 ...state,

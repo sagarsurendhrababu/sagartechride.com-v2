@@ -124,8 +124,9 @@ export const ContentData =[
     },  
     {
         id:'resume',
-        title:'My Resume',
+        title:null,
         subtitle:'Description',
+        layout:'resume',
         icon:'myResume.svg',
     },   
     {
@@ -139,6 +140,153 @@ export const ContentData =[
         title:'Tutorial Videos',
         subtitle:'Description',
         icon:'tutorialVideos.svg',
-    },             
+    },
+    {
+        SkillMatter: [
+            {
+                title: 'UI/UX Design',
+                videoLink: 'there would be a small descripon'
+            },
+            {
+                title: 'Photoshop & Illustractor',
+                videoLink: 'there would be a small descripon'
+            },            
+            {
+                title: 'Wireframing and Prototyping',
+                videoLink: 'there would be a small descripon'
+            },   
+            {
+                title: 'User Research and Usability Testing',
+                videoLink: 'there would be a small descripon'
+            },
+            {
+                title: 'Interface design tool Figma',
+                videoLink: 'there would be a small descripon'
+            },
+            {
+                title: 'Responsive Web Design',
+                videoLink: 'there would be a small descripon'
+            },
+            {
+                title: 'HTML5, CSS3, JavaScript & SASS',
+                videoLink: 'there would be a small descripon'
+            },
+            {
+                title: 'React JS',
+                videoLink: 'there would be a small descripon'
+            },
+            {
+                title: 'Wordpress, Joomla & Opencart',
+                videoLink: 'there would be a small descripon'
+            }, 
+            {
+                title: 'Wordpress Custom Template',
+                videoLink: 'there would be a small descripon'
+            },                                               
+            {
+                title: 'Cross-Browser Compatibility',
+                videoLink: 'there would be a small descripon'
+            },       
+            {
+                title: 'Version Control (Git Hub)',
+                videoLink: 'there would be a small descripon'
+            },
+            {
+                title: 'Problem-Solving and Creative Thinking',
+                videoLink: 'there would be a small descripon'
+            },
+            {
+                title: 'Communication and Collaboration',
+                videoLink: 'there would be a small descripon'
+            },                                                                                      
+        ]
+    } ,
+    {
+        workExp : [
+            {
+               logo: 'egcgs.jpg',
+               date: 'Oct 2023 to present',
+               designation: 'UI/UX Specialist',
+               desc:'this is a desction area' ,
+               website: 'www.google.com',
+               linkedin: 'linedin.com',
+            },
+            {
+                logo: 'eqs.jpg',
+                date: 'Mar 2022 to Sep 2022',
+                designation: 'Frontend Developer',
+                desc:'Manage IR related website development and javascript programming. Optimizing all cross-browser and multi-platform compatibility.' ,
+                website: 'https://www.eqs.com/',
+                linkedin: 'https://www.linkedin.com/company/eqs-group/',
+             },
+             {
+                logo: 'infocom.jpg',
+                date: 'May 2021 to Mar 2022',
+                designation: 'Sr. UI Developer / Frontend Developer',
+                desc:'Create website & web-application in React Js. Manage website development projects from initial design through completion, Optimizing all cross-browser and multi-platform compatibility.' ,
+                website: 'https://www.infocomsoft.com/',
+                linkedin: 'https://www.linkedin.com/company/infocom-software-pvt-ltd-/?viewAsMember=true',
+             },
+             {
+                logo: 'zapio.jpg',
+                date: 'Jun 2020 to May 2021',
+                designation: 'Sr. UX Designer & UI Developer',
+                desc:'Creating websites under Joomla, Wordpress & Opencart platform Maintains and update Ecommerce website and web applications Creating professional logos and advertisement posters for companies' ,
+                website: 'https://zapiotech.com/',
+                linkedin: 'https://www.linkedin.com/company/zapio/?trk=organization-update_share-update_actor-text',
+             },
+             {
+                logo: 'entireTech.jpg',
+                date: 'Mar 2014 to Jan 2017 ',
+                designation: 'Senior Web Developer & Designer',
+                desc:'Creating websites under joomla and wordpress platform Creating professional logos and advertisement posters for companies' ,
+                website: 'https://entiretechservices.com/',
+             },
+             {
+                logo: 'vanilla.jpg',
+                date: 'Oct 02 2023 to Nov 03 2023',
+                designation: 'Web Designer & Developer',
+                desc:'A solid experience on Content Management System like Joomla, Be responsible for maintaining, expanding, and scaling web site ' ,
+                website: 'https://www.vanillanetworks.co.in/',
+             },
+             {
+                logo: 'generomedia.jpg',
+                date: 'Jan 2011 to July 2011',
+                designation: 'Web & Graphic Designer',
+                desc:'Maintains and update web site, Creating professional logos and Advertisement posters for Clients' ,
+                website: 'https://www.generomedia.com/',
+             },
+             {
+                logo: 'iforce.jpg',
+                date: 'Jan 2011 to July 2011',
+                designation: 'Web & Graphic Designer',
+                desc:'Maintains and update web site, Creating professional logos and Advertisement posters for Clients' ,
+             }                                                                             
+        ]
+    },
+    {
+        education: [
+            {
+                subject: 'Bachelor Computer Science (BCA)',
+                year: '2023',
+                institute: 'IGNOU, Kochi',                
+            },
+            {
+                subject: 'Diploma in Graphic Design & Multimedia',
+                year: 'Apr 2005 Nov 2005',
+                institute: 'Sree Sankaracharaya, Kannur',                
+            },
+            {
+                subject: '+2, Biology Science',
+                year: 'Jun 2003 May 2005',
+                institute: 'KHS, Kuthuparamba',                
+            },
+            {
+                subject: 'SSLC',
+                year: 'Jun 2002 Mar 2003',
+                institute: 'MHS, Mambaram',                
+            },                                    
+        ]
+    }           
 
 ]

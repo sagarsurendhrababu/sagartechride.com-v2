@@ -1,7 +1,7 @@
 import React,{ useContext } from 'react';
-import MyInfo from './MyInfo';
-import EmailAccount from './EmailAccount';
-import SocialMedia from './SocialMedia';
+import MyInfo from './Profile/MyInfo';
+import EmailAccount from './Profile/EmailAccount';
+import SocialMedia from './Profile/SocialMedia';
 import { Context } from '../../App';
 
 

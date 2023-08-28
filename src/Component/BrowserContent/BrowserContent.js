@@ -1,6 +1,7 @@
 import React from 'react';
 import Carousel from './Carousel';
-import LayoutSecond from './LayoutSecond';
+import Profile from './Profile';
+import Resume from './Resume';
 import CommonLayout from './CommonLayout';
 import {ContentData} from '../../Reducer/ContentData';
 
@@ -32,7 +33,13 @@ export default function BrowserContent(props) {
       title != null? <CommonLayout title={title} subTitle={subTitle}/> : ''
     }
     {
-      layout != null? <LayoutSecond/> : ''
+      layout == null? '': ''
+    }
+    {
+      layout === 'second'? <Profile/> : ''
+    }
+    {
+      layout === 'resume'? <Resume/> : ''
     }
     </>
   )
