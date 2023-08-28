@@ -287,6 +287,32 @@ export const ContentData =[
                 institute: 'MHS, Mambaram',                
             },                                    
         ]
-    }           
+    },
+    {
+        id:'logo-design',
+        title:'Logo/Brand Design Collections',
+        subtitle:null,
+        gallery:['01.jpg','02.jpg','03.jpg','04.jpg','05.jpg','06.jpg','07.jpg','08.jpg','09.jpg','10.jpg','11.jpg','12.jpg','13.jpg','14.jpg','15.jpg'],
+        icon:'folder.svg',
+    },  
+    {
+        id:'graphic-design',
+        title:'Graphic Design Collections',
+        subtitle:'Description',
+        icon:'folder.svg',
+    },
+    {
+        id:'website-design',
+        title:'Website Design Collections',
+        subtitle:'Description',
+        gallery:['1.jpg','2.jpg','3.jpg'],
+        icon:'folder.svg',
+    },
+    {
+        id:'app-design',
+        title:'Application Design Collections',
+        subtitle:'Description',
+        icon:'folder.svg',
+    },                    
 
 ]

@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Gallery from './Gallery';
 
 export default function CommonLayout(props) {
   return (
     <div className ='col-12'>
-        <h1>{props.title}</h1>
-        <h4>{props.subTitle}</h4>
+        <h5>{props.title}</h5>
+        <p>{props.subTitle != null? props.subTitle : ''}</p>
+        {props.view? <Gallery items={props.view}/> : ''}
     </div>
   )
 }

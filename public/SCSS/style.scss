@@ -550,16 +550,28 @@
 #portfolio{
     &>div{
         &>div{
-          &>a{
+            &>img{
+                width: 100%;
+                height: 150px;
+                object-fit: cover;
+                overflow: hidden;
+            }
+        }
+    }
+}
+.gallery{
+    width: 100%;
+    height: auto;
+    &>div{
+        height: 190px;
+        &>div{
             width: 100%;
             height: 100%;
             &>img{
                 width: 100%;
-                height: 100px;
+                height: 100%;
                 object-fit: cover;
-                overflow: hidden;
             }
-          }
         }
     }
 }

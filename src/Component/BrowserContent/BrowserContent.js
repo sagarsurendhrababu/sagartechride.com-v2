@@ -8,6 +8,7 @@ import {ContentData} from '../../Reducer/ContentData';
 export default function BrowserContent(props) {
   let title;
   let subTitle;
+  let galleryArray;
   let imgArray;
   let iframeFlag;
   let layout;
@@ -15,6 +16,7 @@ export default function BrowserContent(props) {
     if(props.contenName === e.id){
       title = e.title;
       subTitle = e.subtitle;
+      galleryArray = e.gallery;
       imgArray = e.images;
       iframeFlag = e.iframe;
       layout = e.layout;
@@ -30,7 +32,7 @@ export default function BrowserContent(props) {
       </div> : ''
     }
     {
-      title != null? <CommonLayout title={title} subTitle={subTitle}/> : ''
+      title != null? <CommonLayout title={title} subTitle={subTitle} view={galleryArray}/> : ''
     }
     {
       layout == null? '': ''
