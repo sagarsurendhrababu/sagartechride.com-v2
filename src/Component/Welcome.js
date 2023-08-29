@@ -1,10 +1,6 @@
 import React, { useEffect } from 'react';
 
-export default function Welcome() {    
-  useEffect(()=>{  
-
-
-  })
+export default function Welcome() { 
   return (
     <div className='welcomeScreen'>
         <span className='t1'>Hi</span>
@@ -19,7 +15,7 @@ export default function Welcome() {
           <button onClick={()=>{
               document.documentElement.requestFullscreen();
               document.querySelector('.welcomeScreen').style.visibility = "hidden";
-          }}>Enter</button>          
+          }}>Enter</button>           
         </div>
     </div>
   )

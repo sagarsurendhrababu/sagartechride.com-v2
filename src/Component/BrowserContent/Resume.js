@@ -35,7 +35,7 @@ export default function Resume() {
                   payload:true
                 })}}><i class="bi bi-mortarboard"></i>Education</li>
                 <li>
-                  <a className='downalodBtn' target='_blank' href="./IMG/SagarSurendhrababu-Resume.pdf">                    
+                  <a className='downalodBtn' download href="./IMG/SagarSurendhrababu-Resume.pdf">                    
                     <div>
                     <i class="bi bi-cloud-download-fill"></i>  Download<br/>
                     <small>Resume PDF (1.3MB)</small>

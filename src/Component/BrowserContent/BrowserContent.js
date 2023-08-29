@@ -2,12 +2,15 @@ import React from 'react';
 import Carousel from './Carousel';
 import Profile from './Profile';
 import Resume from './Resume';
+import Portfolio from './Resume/Portfolio';
+import ThisPC from './ThisPC';
 import CommonLayout from './CommonLayout';
 import {ContentData} from '../../Reducer/ContentData';
 
 export default function BrowserContent(props) {
   let title;
   let subTitle;
+  let Folder;
   let galleryArray;
   let imgArray;
   let iframeFlag;
@@ -16,6 +19,7 @@ export default function BrowserContent(props) {
     if(props.contenName === e.id){
       title = e.title;
       subTitle = e.subtitle;
+      Folder = e.galleryFolder;
       galleryArray = e.gallery;
       imgArray = e.images;
       iframeFlag = e.iframe;
@@ -32,7 +36,7 @@ export default function BrowserContent(props) {
       </div> : ''
     }
     {
-      title != null? <CommonLayout title={title} subTitle={subTitle} view={galleryArray}/> : ''
+      title != null? <CommonLayout title={title} subTitle={subTitle} view={galleryArray} folder={Folder}/> : ''
     }
     {
       layout == null? '': ''
@@ -43,6 +47,12 @@ export default function BrowserContent(props) {
     {
       layout === 'resume'? <Resume/> : ''
     }
+    {
+      layout === 'work'? <Portfolio/> : ''
+    }   
+    {
+      layout === 'pc'? <ThisPC/> : ''
+    }     
     </>
   )
 }

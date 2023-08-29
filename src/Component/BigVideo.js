@@ -18,7 +18,7 @@ export default function BigVideo() {
               payload:'profile',
               })
               state.closeBigVideo = false;
-            }}>Lets Talk</h4>
+            }}>Lets Talk</h4>                     
     </div>
   )
 }

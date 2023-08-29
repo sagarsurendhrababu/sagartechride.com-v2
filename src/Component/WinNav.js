@@ -29,7 +29,18 @@ export default function WinNav(){
        }
      })
   }
+  useEffect(()=>{
+    const FullDate = new Date();
+    let year = FullDate.getFullYear();
+    let month = FullDate.getMonth();
+    let day = FullDate.getDate();
 
+    let hour = FullDate.getHours();
+    let minutes = FullDate.getMinutes();
+
+    document.querySelector(".dateToday").innerHTML = `${day}-${month+1}-${year}`;
+    document.querySelector(".todayTime").innerHTML = `${hour}:${minutes}`;
+  });
   return (
     <div className="winNav">      
       {state.winStart? <WinStartBar/> : ''}
@@ -56,16 +67,17 @@ export default function WinNav(){
         </ul>
     </div>
     <div className="col-sm-3 d-flex justify-content-sm-end winNavRight">
-        <a href="#"><img src="../IMG/arrow-up-icon.svg"/></a>
-        <a href="#"><img src="../IMG/battery-icon.svg"/></a>
-        <a href="#"><img src="../IMG/wifi-icon.svg"/></a>
+        <a href='#'><i class="bi bi-youtube"></i></a>
+        <a href="#"><i class="bi bi-behance"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
         <a href="#"><img src="../IMG/speaker-icon.svg"/></a>
         <a href="#">ENG</a>
         <div className='date-time'>
-          <span></span>
-          <span></span>
+          <span className='todayTime'></span>
+          <span className='dateToday'></span>          
         </div>               
-        <a href="#"><img src="../IMG/chat-icon.svg"/></a>
+        <a href="#"><img src="../IMG/chat-icon.svg"/></a>        
     </div>  
   </div> 
   )

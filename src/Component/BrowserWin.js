@@ -31,6 +31,20 @@ export default function BrowserWin(props) {
 
       useEffect(()=>{                
         allBrowserWin = document.querySelectorAll('.browserWin');
+
+        function isFullScreen() {
+          return (
+            document.fullscreenElement ||
+            document.webkitFullscreenElement ||
+            document.mozFullScreenElement ||
+            document.msFullscreenElement
+          );
+        }
+        if (!isFullScreen()) {
+          document.documentElement.requestFullscreen();   
+          document.createElement('div').classList.add('maskDesktop');
+        }
+
       });  
 
   return (            

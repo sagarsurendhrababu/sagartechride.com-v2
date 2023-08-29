@@ -8,6 +8,7 @@ export const Context = React.createContext();
 
 function App() {
   const [state,dispatch] = useReducer(Reducer,Data);  
+
   return (
     <Context.Provider value={[state,dispatch]}>      
       <div className='App'>

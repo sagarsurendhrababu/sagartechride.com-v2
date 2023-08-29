@@ -15,7 +15,7 @@ export default function WinDesktop() {
       dispatch({
         type:'WinStartBtn',
         payload:false
-      })
+      });        
     }}>
       {
         Data.browserWinArray.map((item,indx)=>(
@@ -24,7 +24,7 @@ export default function WinDesktop() {
       } 
       {state.closeBigVideo? <BigVideo/> : ''}
       {state.smallVideo? <Videos/> : <VideoLabel/>}
-      <DesckTopIcons/>
+      <DesckTopIcons/>      
     </div>
   )
 }
