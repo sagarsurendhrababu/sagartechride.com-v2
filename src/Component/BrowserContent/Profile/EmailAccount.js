@@ -4,21 +4,22 @@ export default function EmailAccount() {
   return (
     <>
         <h3>Email & Accounts</h3>
+        <p className='m-0'>Please find below the email IDs...</p>
         <span className='spaceHeight'></span>       
-        <div className='d-flex align-items-center'>
+        <div className='d-sm-flex align-items-center'>
             <img src='./IMG/windows-icon.png' className='smallIcon'/>
             <div className='d-flex flex-column'>                
                 <h6><a href = "mailto:sagarts@live.com">sagarts@live.com</a></h6>                
             </div>
         </div>
-        <div className='d-flex item-align-center mt-2 align-items-center'>
+        <div className='d-sm-flex item-align-center mt-2 align-items-center'>
             <img src='./IMG/chrome-icon.png' className='smallIcon'/>
             <div className='d-flex flex-column'>
                 <h6><a href = "mailto:sagarsurendhrababu@gmail.com">sagarsurendhrababu@gmail.com</a></h6>                                              
             </div>
         </div>        
-        <p>Breakpoints are customizable widths that determine how your responsive layout behaves across device or viewport sizes in Bootstrap.</p>
-        <h6>Sign in with a Microsoft account insted</h6>    
+        <p>I want to assure you that I will personally respond to all your emails within a maximum of 24 hours. Whether you have questions, suggestions, or simply want to connect, I am here to ensure that your messages are acknowledged and addressed promptly.</p>
+        <h6>Happy to assist you!</h6>
     </>
   )
 }

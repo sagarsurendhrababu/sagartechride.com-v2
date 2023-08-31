@@ -101,21 +101,30 @@ function Reducer(state,action) {
                 ...state,
                 myinfo:action.payload,
                 emailAccount:false,
-                socialMedia:false,                
+                socialMedia:false, 
+                vision:false, 
+                history:false,
+                goal:false,              
             } 
         case 'tabActionEmail':           
             return{
                 ...state,
                 emailAccount:action.payload,
                 myinfo:false, 
-                socialMedia:false,               
+                socialMedia:false,
+                vision:false, 
+                history:false,
+                goal:false,                
             }             
         case 'tabActionSocial':
             return{
                 ...state,
                 socialMedia:action.payload,
                 emailAccount:false, 
-                myinfo:false,               
+                myinfo:false,  
+                vision:false, 
+                history:false,
+                goal:false,                            
             }  
         case 'tabActionObjective':
             return{
@@ -161,7 +170,37 @@ function Reducer(state,action) {
                 workExp:false,
                 skills:false,
                 portfolio:false,               
-        }                                                                                
+        } 
+        case 'tabActionVision':
+            return{
+                ...state,
+                vision:action.payload,
+                emailAccount:false, 
+                myinfo:false, 
+                socialMedia:false, 
+                history:false,
+                goal:false,                
+            }
+        case 'tabActionHistory':
+            return{
+                ...state,
+                history:action.payload,
+                emailAccount:false, 
+                myinfo:false, 
+                socialMedia:false, 
+                vision:false, 
+                goal:false,             
+            }
+        case 'tabActionGoal':
+            return{
+                ...state,
+                goal:action.payload,
+                emailAccount:false, 
+                myinfo:false, 
+                socialMedia:false,
+                vision:false, 
+                history:false,               
+            }                                                                                                           
         default:
             return{
                 ...state,

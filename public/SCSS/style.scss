@@ -597,6 +597,9 @@
     & h3{
         font-weight: 300;
     }
+    & strong{
+        font-weight: 500;
+    }
 }
 .socialmediazone{
     &>div{
@@ -629,5 +632,66 @@
                 color: #fff;
             }
         }
+    }
+}
+
+@include media-breakpoint-down(sm){
+    .App{
+        .WinStartBar{
+            width:100vw;
+            &>div{
+                &:nth-child(1){
+                    width: 15%;
+                }
+                &:nth-child(2){
+                    width: 50%;
+                }
+                &:nth-child(3){
+                    width: 35%;
+                }                        
+            }            
+        } 
+        .browserWin{
+            .contentBrowserWin{
+                padding-top: 0!important;
+            }
+        }
+       
+    }
+
+    #mobileView{
+        height: 10vh;
+        background-color: #d8e6f2;
+        padding: 0;
+        &>h5{
+            margin-bottom: 0;
+        }
+        &>ul{
+            &>li{
+                height: 100%;
+                width: 100%;
+                padding:.3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &>span{
+                    display: none;
+                } 
+                &>i{
+                    margin: 0;
+                }               
+            }
+        }
+    }
+
+    .winNavLeft{
+        &>a{
+            &:nth-child(2){
+                visibility: hidden;
+            }
+        }
+    }
+    .winNavRight{
+        visibility: hidden;
     }
 }

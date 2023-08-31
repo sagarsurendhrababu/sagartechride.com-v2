@@ -10,35 +10,35 @@ import { Context } from '../../App';
 export default function Resume() {
   const [state, dispatch] = useContext(Context);
   return (
-    <div className='d-flex infoNavBox'>
-        <div className='col-sm-3 infoNav'>
+    <div className='d-sm-flex infoNavBox'>
+        <div className='col-sm-3 infoNav' id="mobileView">
             <h5>My Resume</h5>
-            <ul>
+            <ul className='d-flex d-sm-flex'>
                 <li className={state.objective? 'activeTab' : ''}  onClick={()=>{dispatch({
                   type:'tabActionObjective',
                   payload:true
-                })}}><i className="bi bi-person-lines-fill"></i> Objective</li>
+                })}}><i className="bi bi-person-lines-fill"></i> <span>Objective</span></li>
                 <li className={state.workExp? 'activeTab' : ''}  onClick={()=>{dispatch({
                   type:'tabActionWorkExp',
                   payload:true
-                })}}><i class="bi bi-briefcase"></i>Work Experience</li>
+                })}}><i class="bi bi-briefcase"></i><span>Work Experience</span></li>
                 <li className={state.skills? 'activeTab' : ''}  onClick={()=>{dispatch({
                   type:'tabActionSkills',
                   payload:true
-                })}}><i class="bi bi-lightning-charge"></i>Skills</li>
+                })}}><i class="bi bi-lightning-charge"></i><span>Skills</span></li>
                 <li className={state.portfolio? 'activeTab' : ''}  onClick={()=>{dispatch({
                   type:'tabActionPortfolio',
                   payload:true
-                })}}><i class="bi bi-grid"></i>Portfolio</li>
+                })}}><i class="bi bi-grid"></i><span>Portfolio</span></li>
                 <li className={state.education? 'activeTab' : ''}  onClick={()=>{dispatch({
                   type:'tabActionEducation',
                   payload:true
-                })}}><i class="bi bi-mortarboard"></i>Education</li>
+                })}}><i class="bi bi-mortarboard"></i><span>Education</span></li>
                 <li>
                   <a className='downalodBtn' download href="./IMG/SagarSurendhrababu-Resume.pdf">                    
                     <div>
-                    <i class="bi bi-cloud-download-fill"></i>  Download<br/>
-                    <small>Resume PDF (1.3MB)</small>
+                    <i class="bi bi-cloud-download-fill"></i>  <span className='d-none d-sm-block'>Download</span><br/>
+                    <small className='d-none d-sm-block'>Resume PDF (1.3MB)</small>
                     </div>                    
                   </a>
                 </li>

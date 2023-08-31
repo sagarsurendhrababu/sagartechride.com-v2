@@ -7,12 +7,11 @@ export default function Education() {
     <>  
     {eduData.map((e,i) => (
       <div className='mb-4 pb-4 border-bottom' key={i}>             
-          <h5>{e.subject}</h5>
+          <h6>{e.subject}</h6>
           <small className='text-secondary'>{e.year}</small>
-          <p>{e.institute}</p>         
+          <p>{e.institute}</p>  
       </div>
     ))}
-
     </>
   )
 }

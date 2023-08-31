@@ -10,6 +10,9 @@ export  const Data = {
     myinfo:true, 
     emailAccount:false, 
     socialMedia:false,
+    vision:false,
+    history:false,
+    goal:false,
 
     objective:true,
     workExp:false,

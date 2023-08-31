@@ -10,7 +10,14 @@ export default function DesckTopIcons() {
             type:'browserWinArray',
             payload:'pc',
             })
-        }}>
+        }}
+        onClick={()=>{
+            dispatch({
+            type:'browserWinArray',
+            payload:'pc',
+            })
+        }}        
+        >
             <img src='../IMG/thisPC.svg'/>
             <h6>This PC</h6>
         </li>        
@@ -19,7 +26,14 @@ export default function DesckTopIcons() {
             type:'browserWinArray',
             payload:'games',
             })
-        }}>
+        }}
+        onClick={()=>{
+            dispatch({
+            type:'browserWinArray',
+            payload:'games',
+            })
+        }}        
+        >
         <img src='../IMG/myGames.svg'/>
             <h6>Games</h6>
         </li>
@@ -28,7 +42,15 @@ export default function DesckTopIcons() {
             type:'browserWinArray',
             payload:'resume',
             })
-        }}>
+        }}
+        onClick={()=>{
+            dispatch({
+            type:'browserWinArray',
+            payload:'resume',
+            })
+        }}        
+        
+        >
         <img src='../IMG/myResume.svg'/>
             <h6>Resume</h6>
         </li> 
@@ -38,7 +60,14 @@ export default function DesckTopIcons() {
             type:'browserWinArray',
             payload:'myworks',
             })
-        }}>
+        }}
+        onClick={()=>{
+            dispatch({
+            type:'browserWinArray',
+            payload:'myworks',
+            })
+        }}
+        >
         <img src='../IMG/myWorks.svg'/>
             <h6>My Works</h6>
         </li> 
