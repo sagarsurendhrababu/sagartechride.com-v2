@@ -6,7 +6,7 @@ export default function Vision() {
       <h3 className='mb-4'>Vision</h3>
       <h5><i className='text-secondary'>"The way I see it, discovering our true selves in life is my ultimate dream and goal. It is a journey that requires commitment, self-discovery, and a strong desire to reach our potential. Let us embrace this challenge and aspire to become the best versions of ourselves, fulfilling our purpose in life and living with purpose and meaning."</i></h5>
       <p>As a UI designer and frontend developer, my vision encompasses the creation of seamless and engaging user experiences through the fusion of design aesthetics and technical functionality. Here are a few aspects that might align with my vision:</p>
-      <ul>
+      <ul className='m-0 p-0'>
         <li><strong>User-Centered Design: </strong>
           <p>My vision likely revolves around putting the user at the center of my design process. Understanding the needs, preferences, and behaviors of users is key to crafting interfaces that resonate with them. This involves conducting user research, creating personas, and empathizing with the end users' journey.</p>
         </li>

@@ -13,7 +13,7 @@ export default function Resume() {
     <div className='d-sm-flex infoNavBox'>
         <div className='col-sm-3 infoNav' id="mobileView">
             <h5>My Resume</h5>
-            <ul className='d-flex d-sm-flex'>
+            <ul>
                 <li className={state.objective? 'activeTab' : ''}  onClick={()=>{dispatch({
                   type:'tabActionObjective',
                   payload:true

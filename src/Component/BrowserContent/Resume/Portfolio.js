@@ -5,7 +5,7 @@ export default function Portfolio() {
   const [state, dispatch] = useContext(Context);
   return (
     <div className='row g-2' id='portfolio'>      
-        <div className='col-6'>
+        <div className='col-sm-6'>
             <div className='p-3 border bg-light d-flex flex-column' onClick={()=>{
                    dispatch({
                     type:'browserWinArray',
@@ -17,7 +17,7 @@ export default function Portfolio() {
               <small className='m-0 p-0'>Adobe Illustractor, Photoshop, Figma</small>
             </div>
         </div>
-        <div className='col-6'>
+        <div className='col-sm-6'>
             <div className='p-3 border bg-light d-flex flex-column' onClick={()=>{
                    dispatch({
                     type:'browserWinArray',
@@ -29,7 +29,7 @@ export default function Portfolio() {
               <small className='m-0 p-0'>Adobe Illustractor, Photoshop, Figma</small>
             </div>
         </div>
-        <div className='col-6'>
+        <div className='col-sm-6'>
             <div className='p-3 border bg-light d-flex flex-column' onClick={()=>{
                    dispatch({
                     type:'browserWinArray',
@@ -41,7 +41,7 @@ export default function Portfolio() {
               <small className='m-0 p-0'>Adobe Illustractor, Photoshop, Figma</small>
             </div>
         </div>
-        <div className='col-6'>
+        <div className='col-sm-6'>
             <div className='p-3 border bg-light d-flex flex-column' onClick={()=>{
                    dispatch({
                     type:'browserWinArray',

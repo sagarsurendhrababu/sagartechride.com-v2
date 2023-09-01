@@ -7,8 +7,8 @@ export default function WorkExperience() {
     <>
     {ExpData.map((e,i) => (
       <div className='mb-4 pb-4 border-bottom'>             
-        <div className='col-12 d-flex mb-3 justify-content-between'>
-        <img className='companyLogo' src={`./IMG/${e.logo}`}/>
+        <div className='col-12 d-sm-flex mb-3 justify-content-between'>
+        <img className='companyLogo' src={`./IMG/${e.logo}`}/><br></br>
         <small className='text-secondary'>{e.date}</small>
         </div>
         <p><b className='text-seondary'>{e.designation}</b></p>

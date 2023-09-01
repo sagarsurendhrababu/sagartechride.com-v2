@@ -5,7 +5,7 @@ export default function History() {
     <>
     <h3>My Career Journey</h3>
       <p>My journey in the world of design and technology has been shaped by my inherent artistic abilities and a deep appreciation for the role of design in the corporate landscape. Born into an artistic background, I was exposed to creativity from a young age, instilling in me a natural affinity for design aesthetics and a keen understanding of its significance in various contexts.</p>
-      <figure class="figure d-flex gap-3" id='historySection'>
+      <figure class="figure d-sm-flex gap-3" id='historySection'>
         <div className='d-flex flex-column col-sm-6'>
           <img src="./IMG/pj-joseph.jpg" className="img-thumbnail img-fluid rounded" />
           <figcaption class="figure-caption text-right">An Honorable Moment: Receiving the Award from  <b>Minister PJ Joseph</b> in 1996. (water color & pencil drawing)</figcaption>
@@ -26,7 +26,7 @@ export default function History() {
         </div>      
       </figure>      
       <p>Over the course of more than three years, I honed my skills as a Graphic Designer across various organizations. The dynamic nature of the projects I undertook exposed me to diverse challenges and opportunities for growth. It was during this time that a fascination with web technologies began to flourish within me. Determined to explore this new horizon, I pursued a certificate course in web design technology from Kochi, which marked the beginning of my journey as a Web Designer.</p>
-      <figure class="figure d-flex gap-3" id='historySection'>
+      <figure class="figure d-sm-flex gap-3" id='historySection'>
         <div className='d-flex flex-column col-sm-6'>
           <img src="./IMG/webinar-100.jpg" className="img-thumbnail img-fluid rounded" />
           <figcaption class="figure-caption text-right">Conducting UI/UX Design Session at Infocom</figcaption>
