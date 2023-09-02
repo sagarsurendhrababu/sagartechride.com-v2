@@ -11,9 +11,11 @@ import BrowserContent from './BrowserContent/BrowserContent';
 export default function BrowserWin(props) {    
   const [state,dispatch] = useContext(Context);
   let icons;
+  let browserTitle;
   ContentData.map(e=>{
     if(props.itemName === e.id){
       icons = e.icon;
+      browserTitle = e.title;
     }
   });
 
@@ -51,8 +53,9 @@ export default function BrowserWin(props) {
     <div className='browserWin'>
         <div className='headerBrowserWin'>
             <div>
-              <span>
+              <span className='d-flex align-items-center'>
                 <img className='browserIcon' src={`../IMG/${icons}`}/>
+                <h6 className='m-0 px-2'>{browserTitle}</h6>
               </span>
               <span>
                 <ul>

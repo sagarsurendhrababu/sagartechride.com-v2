@@ -83,8 +83,7 @@ function Reducer(state,action) {
                 browserWinArray: addingValues(Data.browserWinArray, action.payload),
                 winStart:false,
                 checkBrowserZindex:checkBigZindex()                
-            } 
-            
+            }            
         case 'browserClose':            
             return{
                 ...state,
@@ -200,7 +199,13 @@ function Reducer(state,action) {
                 socialMedia:false,
                 vision:false, 
                 history:false,               
-            }                                                                                                           
+            } 
+        case 'bigImageAction':
+            return{
+                ...state,
+                bigImg:action.payload,
+                imgName:action.path,
+            }                                                                                                                   
         default:
             return{
                 ...state,

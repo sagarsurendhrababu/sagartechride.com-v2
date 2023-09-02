@@ -22,5 +22,8 @@ export  const Data = {
 
     closeBigVideo:false,
     smallVideo:true,
+
+    bigImg:false,
+    imgName:'./',
 }
 

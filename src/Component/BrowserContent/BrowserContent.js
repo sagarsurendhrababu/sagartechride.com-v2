@@ -4,10 +4,13 @@ import Profile from './Profile';
 import Resume from './Resume';
 import Portfolio from './Resume/Portfolio';
 import ThisPC from './ThisPC';
+import BigImg from '../BigImg';
 import CommonLayout from './CommonLayout';
 import {ContentData} from '../../Reducer/ContentData';
 
+
 export default function BrowserContent(props) {
+
   let title;
   let subTitle;
   let Folder;
@@ -49,10 +52,11 @@ export default function BrowserContent(props) {
     }
     {
       layout === 'work'? <Portfolio/> : ''
-    }   
+    }       
     {
       layout === 'pc'? <ThisPC/> : ''
-    }     
+    } 
+    
     </>
   )
 }

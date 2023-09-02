@@ -16,6 +16,42 @@
     display: flex;
     position: relative;
     flex-direction: column;
+
+    .popupBg{
+        width: 100%;
+        height: 100%;
+        background-color:rgba(0,0,0,.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 99998;
+        &>img{
+            max-width: 90%;
+            max-height: 80vh;
+            object-fit: contain;
+        }
+    }   
+    .thisPCicons{
+        list-style: none;
+        &>li{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            &>img{
+                margin-bottom: 10px;
+                height: 40px;
+            }
+            &>h6{
+                font-size: .9rem;
+                font-weight: 400;
+            }
+        }
+    }  
     .welcomeScreen{
         width: 100%;
         height: 100vh;
@@ -338,13 +374,24 @@
                 font-size: 1rem;
                 padding: 1rem;
                 margin:.2rem 0;
-                &:hover{
-                    background-color: #e5eff7;
-                }               
-                &>i{
-                    margin-right: 1rem;
-                }            
+                    &:hover{
+                        background-color: #e5eff7;
+                    }               
+                    &>i{
+                        margin-right: 1rem;
+                    }            
+                }
             }
+        }
+        .infoCon{
+            & li{
+                list-style: none;
+            }
+        }
+        #mobileView{
+            &>ul{
+                display: flex;
+                flex-direction: column;
             }
         }
         .infoCon{
@@ -380,7 +427,7 @@
     .activeTab{
         background-color: #e5eff7!important;
     } 
-}
+
 
 .welcomeVideo{
     position: absolute;
@@ -559,9 +606,10 @@
         }
     }
 }
+
 .gallery{
     width: 100%;
-    height: auto;
+    height: auto; 
     &>div{
         height: 190px;
         &>div{
@@ -634,7 +682,53 @@
         }
     }
 }
+}
 
+
+
+@include media-breakpoint-down(md){
+.App{
+    .winNavLeft{
+        &>a{
+            &:nth-child(2){
+                visibility: hidden;
+            }
+        }
+    } 
+    .desckIcons{
+        flex-direction: row;
+    }
+    .desckIcons{
+        &>li{
+            width: 15%;
+            height: auto;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+    } 
+    .date-time{
+        display: none!important;
+    }   
+    .winNavRight{
+        &>a{
+            line-height: 35px;
+            display: none!important;
+            &:nth-child(4){
+                display: block!important;
+            }
+            &:nth-child(3){
+                display: block!important;
+            }
+            &:nth-child(2){
+                display: block!important;
+            }
+            &:nth-child(1){
+                display: block!important;
+            }                                                
+        }
+    } 
+}
+}
 @include media-breakpoint-down(sm){
     .App{
         .WinStartBar{
@@ -649,11 +743,19 @@
                 &:nth-child(3){
                     width: 35%;
                 }                        
-            }            
-        } 
+            }
+        }
+
         .browserWin{
             .contentBrowserWin{
                 padding-top: 0!important;
+            }
+        }
+        .specDetails{
+            &>li{
+                &>span{
+                    text-align: right;
+                }
             }
         }
         #mobileView{
@@ -662,9 +764,11 @@
             padding: 0;
             &>h5{
                 margin-bottom: 0;
+                padding-top:10px;
             }
             &>ul{
                 display: flex;
+                flex-direction: row!important;
                 &>li{
                     height: 100%;
                     width: 100%;
@@ -687,11 +791,33 @@
                     visibility: hidden;
                 }
             }
-        }
+        } 
         .winNavRight{
-            visibility: hidden;
-        }        
-       
+            &>a{
+                line-height: 35px;
+                display: none!important;
+                &:nth-child(4){
+                    display: block!important;
+                }
+                &:nth-child(3){
+                    display: block!important;
+                }
+                &:nth-child(2){
+                    display: block!important;
+                }
+                &:nth-child(1){
+                    display: block!important;
+                }                                                
+            }
+        } 
+        .desckIcons{
+            flex-direction: column;
+            &>li{
+                width: 15%;
+                justify-content: flex-start;
+            }
+        }
+        
     }
 
 }

@@ -42,7 +42,7 @@ export default function LayoutSecond() {
                 <li  className={state.goal? 'activeTab' : ''} onClick={()=>{dispatch({
                   type:'tabActionGoal',
                   payload:true
-                })}}><i class="bi bi-trophy"></i> <span>My Goals</span></li>
+                })}}><i class="bi bi-trophy"></i> <span>Goal</span></li>
             </ul>
         </div>
         <div className='col-sm-8 bg-light infoCon'>
@@ -51,7 +51,7 @@ export default function LayoutSecond() {
             {state.socialMedia? <SocialMedia/> : ''}  
             {state.vision? <Vision/> : ''} 
             {state.history? <History/> : ''} 
-            {state.goal? <Goal/> : ''}            
+            {state.goal? <Goal/> : ''}  
         </div>
     </div>
   )

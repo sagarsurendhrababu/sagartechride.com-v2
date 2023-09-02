@@ -87,27 +87,29 @@ export const ContentData =[
     },
     {
         id:'profile',
-        title:null,
-        subtitle:'Description',
+        title:'Profile',
+        subtitle:null,
         layout:'second',
         icon:'folder.svg',
     },
     {
         id:'document',
         title:'document',
-        subtitle:'Description',
+        subtitle:null,
         icon:'folder.svg',
     },
     {
         id:'gallery',
-        title:'gallery',
-        subtitle:'Description',
+        title:'Gallery',
+        subtitle:null,
+        galleryFolder:'personalGallery/',
+        gallery:['001.jpg','002.jpg','003.jpg','004.jpg','005.jpg','006.jpg','007.jpg','008.jpg','009.jpg','010.jpg','011.jpg','012.jpg'],
         icon:'folder.svg',
     },
     {
         id:'settings',
-        title:'settings',
-        subtitle:'Description',
+        title:'Settings',
+        subtitle:null,
         icon:'folder.svg',
     },
     {
@@ -125,8 +127,8 @@ export const ContentData =[
     },  
     {
         id:'resume',
-        title:null,
-        subtitle:'Description',
+        title:'Resume',
+        subtitle:null,
         layout:'resume',
         icon:'myResume.svg',
     },   
@@ -321,6 +323,16 @@ export const ContentData =[
         galleryFolder:'app-collections/',
         gallery:['01.jpg','02.jpg','03.jpg'],
         icon:'folder.svg',
-    },                    
+    },  
+    {
+        id:'bigImg',
+        title:'Image Preview',
+        subtitle:null,
+        galleryFolder:'personalGallery/',
+        gallery:['001.jpg','002.jpg','003.jpg','004.jpg','005.jpg','006.jpg','007.jpg','008.jpg','009.jpg','010.jpg','011.jpg','012.jpg'],        
+        layout:'bigImg',
+        icon:'folder.svg',
+    },
+                      
 
 ]

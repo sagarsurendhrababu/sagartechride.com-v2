@@ -6,6 +6,7 @@ import Videos from './Videos';
 import BigVideo from './BigVideo';
 import VideoLabel from './VideoLabel';
 import DesckTopIcons from './DesckTopIcons';
+import BigImg from './BigImg';
 
 export default function WinDesktop() {
   const [state,dispatch]=useContext(Context); 
@@ -24,6 +25,7 @@ export default function WinDesktop() {
       } 
       {state.closeBigVideo? <BigVideo/> : ''}
       {state.smallVideo? <Videos/> : <VideoLabel/>}
+      {state.bigImg? <BigImg action={state.bigImg}/> : ''}
       <DesckTopIcons/>      
     </div>
   )
