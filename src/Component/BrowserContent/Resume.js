@@ -35,9 +35,12 @@ export default function Resume() {
                 })}}><i class="bi bi-mortarboard"></i><span>Education</span></li>
                 <li>
                   <a className='downalodBtn' download href="./IMG/SagarSurendhrababu-Resume.pdf">                    
-                    <div>
-                    <i class="bi bi-cloud-download-fill"></i>  <span className='d-none d-sm-block'>Download</span>
-                    <small className='d-none d-sm-block'>Resume PDF (1.3MB)</small>
+                    <div className='d-flex'>
+                      <i class="bi bi-cloud-download-fill"></i>  
+                      <div className='d-flex-column px-3'>
+                        <span className='d-none d-sm-block'>Download</span>
+                        <small className='d-none d-sm-block'>Resume PDF (1.3MB)</small>
+                      </div>
                     </div>                    
                   </a>
                 </li>

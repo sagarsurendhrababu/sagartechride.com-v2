@@ -38,11 +38,17 @@ export default function LayoutSecond() {
                   type:'tabActionHistory',
                   payload:true
                 })}} ><i class="bi bi-clock-history"></i> <span>Career Journey</span></li>
-
-                <li  className={state.goal? 'activeTab' : ''} onClick={()=>{dispatch({
-                  type:'tabActionGoal',
-                  payload:true
-                })}}><i class="bi bi-trophy"></i> <span>Goal</span></li>
+                <li>
+                  <a className='downalodBtn' download href="./IMG/SagarSurendhrababu-Resume.pdf">                    
+                    <div className='d-flex'>
+                      <i class="bi bi-cloud-download-fill"></i>  
+                      <div className='d-flex-column px-3'>
+                        <span className='d-none d-sm-block'>Download</span>
+                        <small className='d-none d-sm-block'>Resume PDF (1.3MB)</small>
+                      </div>
+                    </div>                    
+                  </a>
+                </li>
             </ul>
         </div>
         <div className='col-sm-8 bg-light infoCon'>

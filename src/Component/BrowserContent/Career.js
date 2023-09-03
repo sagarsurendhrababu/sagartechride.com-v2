@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Career() {
   return (
-    <div className='px-5 py-3'>
+    <div className='px-sm-5 py-sm-3 px-1 py-2'>
     <h3>My Career Journey</h3>
       <p>My journey in the world of design and technology has been shaped by my inherent artistic abilities and a deep appreciation for the role of design in the corporate landscape. Born into an artistic background, I was exposed to creativity from a young age, instilling in me a natural affinity for design aesthetics and a keen understanding of its significance in various contexts.</p>
       <figure class="figure d-sm-flex gap-3" id='historySection'>

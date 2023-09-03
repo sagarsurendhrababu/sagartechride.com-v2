@@ -6,7 +6,7 @@ export default function EmailAccount() {
         <h3>Email & Account</h3>
         <p className='m-0'>Please find below the email IDs...</p>
         <span className='spaceHeight'></span>       
-        <div className='d-sm-flex align-items-center'>
+        <div className='d-flex align-items-center'>
             <img src='./IMG/windows-icon.png' className='smallIcon'/>
             <div className='d-flex flex-column'>                
                 <h6><a href = "mailto:sagarts@live.com">sagarts@live.com</a></h6> 

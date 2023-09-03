@@ -5,6 +5,16 @@ import Resume from './Resume';
 import Portfolio from './Resume/Portfolio';
 import ThisPC from './ThisPC';
 import BigImg from '../BigImg';
+import Figma from './Figma';
+import Photoshop from './Photoshop';
+import Illustractor from './Illustractor';
+import Javascript from './Javascript';
+import Sass from './Sass';
+import Css from './Css';
+import Wordpress from './Wordpress';
+import Joomla from './Joomla';
+import Opencart from './Opencart';
+import Html from './Html';
 import Career from './Career';
 import Vision from './Vision';
 import CommonLayout from './CommonLayout';
@@ -63,8 +73,37 @@ export default function BrowserContent(props) {
     }   
     {
       layout === 'vision'? <Vision/> : ''
-    }       
-    
+    }   
+    {
+      layout === 'figma'? <Figma/> : ''
+    }  
+    {
+      layout === 'photoshop'? <Photoshop/> : ''
+    } 
+    {
+      layout === 'illustractor'? <Illustractor/> : ''
+    }  
+    {
+      layout === 'javascript'? <Javascript/> : ''
+    } 
+    {
+      layout === 'sass'? <Sass/> : ''
+    }   
+    {
+      layout === 'html'? <Html/> : ''
+    } 
+    {
+      layout === 'css'? <Css/> : ''
+    }                                   
+    {
+      layout === 'wordpress'? <Wordpress/> : ''
+    } 
+    {
+      layout === 'joomla'? <Joomla/> : ''
+    }   
+    {
+      layout === 'opencart'? <Opencart/> : ''
+    }                 
     </>
   )
 }

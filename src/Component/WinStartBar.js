@@ -107,7 +107,7 @@ export default function WinStartBar() {
                  <li onClick={()=>{
                    dispatch({
                     type:'browserWinArray',
-                    payload:'works',
+                    payload:'myworks',
                    })
                 }}>
                     <img src='../IMG/my-works.svg'/>

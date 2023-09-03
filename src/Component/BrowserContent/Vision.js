@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Vision() {
   return (
-    <div className='px-5 py-3'>
+    <div className='px-sm-5 py-sm-3 px-1 py-2'>
       <h3 className='mb-4'>Vision</h3>
       <h5><i className='text-secondary'>"The way I see it, discovering our true selves in life is my ultimate dream and goal. It is a journey that requires commitment, self-discovery, and a strong desire to reach our potential. Let us embrace this challenge and aspire to become the best versions of ourselves, fulfilling our purpose in life and living with purpose and meaning."</i></h5>
       <p>As a UI designer and frontend developer, my vision encompasses the creation of seamless and engaging user experiences through the fusion of design aesthetics and technical functionality. Here are a few aspects that might align with my vision:</p>
