@@ -5,6 +5,8 @@ import Resume from './Resume';
 import Portfolio from './Resume/Portfolio';
 import ThisPC from './ThisPC';
 import BigImg from '../BigImg';
+import Career from './Career';
+import Vision from './Vision';
 import CommonLayout from './CommonLayout';
 import {ContentData} from '../../Reducer/ContentData';
 
@@ -56,6 +58,12 @@ export default function BrowserContent(props) {
     {
       layout === 'pc'? <ThisPC/> : ''
     } 
+    {
+      layout === 'career'? <Career/> : ''
+    }   
+    {
+      layout === 'vision'? <Vision/> : ''
+    }       
     
     </>
   )

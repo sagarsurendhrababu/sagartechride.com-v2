@@ -67,10 +67,10 @@ export default function WinNav(){
         </ul>
     </div>
     <div className="col-sm-3 d-flex justify-content-sm-end winNavRight">
-        <a href='#'><i class="bi bi-youtube"></i></a>
-        <a href="#"><i class="bi bi-behance"></i></a>
-        <a href="#"><i class="bi bi-linkedin"></i></a>
-        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href='https://www.youtube.com/@sagarsurendhrababu9260/featured' target='_blank'><i class="bi bi-youtube"></i></a>
+        <a href="https://www.behance.net/sagarsurendhrababu" target='_blank'><i class="bi bi-behance"></i></a>
+        <a href="https://www.linkedin.com/in/sagarsurendhrababu/" target='_blank'><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/SagarTechRide/" target='_blank'><i class="bi bi-instagram"></i></a>
         <a href="#"><img src="../IMG/speaker-icon.svg"/></a>
         <a href="#">ENG</a>
         <div className='date-time'>

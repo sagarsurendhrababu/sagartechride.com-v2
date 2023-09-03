@@ -2,6 +2,7 @@ export const ContentData =[
     {   
         id:'figma',
         title:'Figma',
+        browserTitle:'Figma',
         subtitle:'Figma is a cloud-based design and prototyping tool that is widely used by UI/UX designers, product teams, and design agencies. It offers a collaborative environment where multiple team members can work simultaneously on the same project, making it ideal for remote collaboration.',
         images:['figma1.jpg','figma2.jpg','figma3.jpg'],
         icon:'figma.svg',
@@ -9,6 +10,7 @@ export const ContentData =[
     {
         id:'illustractor',
         title:'Illustractor',
+        browserTitle:'Illustractor',
         subtitle:'Figma is a cloud-based design and prototyping tool that is widely used by UI/UX designers, product teams, and design agencies. It offers a collaborative environment where multiple team members can work simultaneously on the same project, making it ideal for remote collaboration.',
         images:['illustractor1.jpg','illustractor2.jpg','illustractor3.jpg'],  
         icon:'illustractor.svg',        
@@ -16,6 +18,7 @@ export const ContentData =[
     {
         id:'photoshop',
         title:'Photoshop',
+        browserTitle:'Photoshop',
         subtitle:'Photoshop is a cloud-based design and prototyping tool that is widely used by UI/UX designers, product teams, and design agencies. It offers a collaborative environment where multiple team members can work simultaneously on the same project, making it ideal for remote collaboration.',
         images:['photoshop1.jpg','photoshop2.jpg','photoshop3.jpg'],
         icon:'photoshop.svg',            
@@ -23,6 +26,7 @@ export const ContentData =[
     {
         id:'javascript',
         title:'Javascript',
+        browserTitle:'Javascript',
         subtitle:'javascript is a cloud-based design and prototyping tool that is widely used by UI/UX designers, product teams, and design agencies. It offers a collaborative environment where multiple team members can work simultaneously on the same project, making it ideal for remote collaboration.',
         images:['javascript1.jpg','javascript2.jpg','javascript3.jpg'],          
         icon:'javascript.svg',  
@@ -30,6 +34,7 @@ export const ContentData =[
     {
         id:'sass',
         title:'SASS',
+        browserTitle:'SASS',
         subtitle:'SASS is a cloud-based design and prototyping tool that is widely used by UI/UX designers, product teams, and design agencies. It offers a collaborative environment where multiple team members can work simultaneously on the same project, making it ideal for remote collaboration.',
         images:['sass1.jpg','sass2.jpg','sass3.jpg'], 
         icon:'sass.svg',           
@@ -37,6 +42,7 @@ export const ContentData =[
     {
         id:'html',
         title:'HTML5',
+        browserTitle:'HTML5',
         subtitle:'HTML5 is a cloud-based design and prototyping tool that is widely used by UI/UX designers, product teams, and design agencies. It offers a collaborative environment where multiple team members can work simultaneously on the same project, making it ideal for remote collaboration.',
         images:['html1.jpg','html2.jpg','html3.jpg'],          
         icon:'html.svg',  
@@ -44,6 +50,7 @@ export const ContentData =[
     {
         id:'css',
         title:'CSS3',
+        browserTitle:'CSS3',
         subtitle:'CSS3 is a cloud-based design and prototyping tool that is widely used by UI/UX designers, product teams, and design agencies. It offers a collaborative environment where multiple team members can work simultaneously on the same project, making it ideal for remote collaboration.',
         images:['css1.jpg','css2.jpg','css3.jpg'], 
         icon:'css.svg',
@@ -51,6 +58,7 @@ export const ContentData =[
     {
         id:'wordpress',
         title:'Wordpress',
+        browserTitle:'Wordpress',
         subtitle:'Wordpress is a cloud-based design and prototyping tool that is widely used by UI/UX designers, product teams, and design agencies. It offers a collaborative environment where multiple team members can work simultaneously on the same project, making it ideal for remote collaboration.',
         images:['wordpress1.jpg','wordpress2.jpg','wordpress3.jpg'],
         icon:'wordpress.svg',
@@ -58,6 +66,7 @@ export const ContentData =[
     {
         id:'joomla',
         title:'Joomla',
+        browserTitle:'Joomla',
         subtitle:'Joomla is a cloud-based design and prototyping tool that is widely used by UI/UX designers, product teams, and design agencies. It offers a collaborative environment where multiple team members can work simultaneously on the same project, making it ideal for remote collaboration.',
         images:['joomla1.jpg','joomla2.jpg','joomla3.jpg'],  
         icon:'joomla.svg',
@@ -65,6 +74,7 @@ export const ContentData =[
     {
         id:'opencart',
         title:'Opencart',
+        browserTitle:'Opencart',
         subtitle:'Opencart is a cloud-based design and prototyping tool that is widely used by UI/UX designers, product teams, and design agencies. It offers a collaborative environment where multiple team members can work simultaneously on the same project, making it ideal for remote collaboration.',
         images:['opencart1.jpg','opencart2.jpg','opencart3.jpg'],
         icon:'opencart.svg',
@@ -72,6 +82,7 @@ export const ContentData =[
     {
         id:'linkedin',
         title:'LinkedIn',
+        browserTitle:'LinkedIn',
         subtitle:'LinkedIn is a cloud-based design and prototyping tool that is widely used by UI/UX designers, product teams, and design agencies. It offers a collaborative environment where multiple team members can work simultaneously on the same project, making it ideal for remote collaboration.',
         images:['opencart1.jpg','opencart2.jpg','opencart3.jpg'], 
         icon:'linkedin.svg',
@@ -80,6 +91,7 @@ export const ContentData =[
     {
         id:'youtube',
         title:'Youtube',
+        browserTitle:'youtube',
         subtitle:'Youtube is a cloud-based design and prototyping tool that is widely used by UI/UX designers, product teams, and design agencies. It offers a collaborative environment where multiple team members can work simultaneously on the same project, making it ideal for remote collaboration.',
         images:['opencart1.jpg','opencart2.jpg','opencart3.jpg'], 
         icon:'youtube.svg',
@@ -87,34 +99,39 @@ export const ContentData =[
     },
     {
         id:'profile',
-        title:'Profile',
+        title:null,
+        browserTitle:'Profile',
         subtitle:null,
         layout:'second',
-        icon:'folder.svg',
+        icon:'profile.svg',
     },
     {
         id:'document',
-        title:'document',
-        subtitle:null,
+        title:'',
+        browserTitle:'Document',
+        subtitle:'coming soon',
         icon:'folder.svg',
     },
     {
         id:'gallery',
-        title:'Gallery',
+        title:'',
+        browserTitle:'Gallery',
         subtitle:null,
         galleryFolder:'personalGallery/',
         gallery:['001.jpg','002.jpg','003.jpg','004.jpg','005.jpg','006.jpg','007.jpg','008.jpg','009.jpg','010.jpg','011.jpg','012.jpg'],
         icon:'folder.svg',
     },
     {
-        id:'settings',
-        title:'Settings',
-        subtitle:null,
+        id:'settings',        
+        title:'',
+        browserTitle:'Settings',
+        subtitle:'coming soon',
         icon:'folder.svg',
     },
     {
         id:'pc',
         title:'This PC',
+        browserTitle:'Javascript',
         subtitle:null,
         layout:'pc',
         icon:'thisPC.svg',
@@ -122,26 +139,30 @@ export const ContentData =[
     {
         id:'games',
         title:'Games',
+        browserTitle:'Javascript',
         subtitle:'Coming Soon...',
         icon:'myGames.svg',
     },  
     {
         id:'resume',
-        title:'Resume',
+        title:null,
+        browserTitle:'Resume',
         subtitle:null,
         layout:'resume',
         icon:'myResume.svg',
     },   
     {
         id:'myworks',
-        title:'My Works',
+        title:'',
+        browserTitle:'My Works',
         subtitle:'Here, you will find a collection of my best work and projects that showcase my skills and expertise. ',
         layout:'work',
         icon:'myWorks.svg',
     },
     {
         id:'tutorials',
-        title:'Tutorial Videos',
+        title:'',
+        browserTitle:'Videos',
         subtitle:'Coming Soon...',
         icon:'tutorialVideos.svg',
     },
@@ -295,6 +316,7 @@ export const ContentData =[
     {
         id:'logo-design',
         title:'Logo/Brand Design Collections',
+        browserTitle:'Logo Design',
         subtitle:null,
         galleryFolder:'logo-collections/',
         gallery:['01.jpg','02.jpg','03.jpg','04.jpg','05.jpg','06.jpg','07.jpg','08.jpg','09.jpg','10.jpg','11.jpg','12.jpg','13.jpg','14.jpg','15.jpg'],
@@ -303,6 +325,7 @@ export const ContentData =[
     {
         id:'graphic-design',
         title:'Graphic Design Collections',
+        browserTitle:'Graphic Design',
         subtitle:null,
         galleryFolder:'graphic-collections/',
         gallery:['01.jpg','02.jpg','03.jpg','04.jpg','05.jpg','06.jpg','07.jpg','08.jpg','09.jpg','10.jpg','11.jpg'],
@@ -311,6 +334,7 @@ export const ContentData =[
     {
         id:'website-design',
         title:'Website Design Collections',
+        browserTitle:'Website Design',
         subtitle:null,
         galleryFolder:'web-collections/',
         gallery:['01.png','02.png','03.png','04.png','05.jpg'],
@@ -319,20 +343,27 @@ export const ContentData =[
     {
         id:'app-design',
         title:'Application Design Collections',
+        browserTitle:'App Design',
         subtitle:null,
         galleryFolder:'app-collections/',
         gallery:['01.jpg','02.jpg','03.jpg'],
         icon:'folder.svg',
-    },  
+    },    
     {
-        id:'bigImg',
-        title:'Image Preview',
+        id:'career',
+        title:null,
+        browserTitle:'Career Journey',
         subtitle:null,
-        galleryFolder:'personalGallery/',
-        gallery:['001.jpg','002.jpg','003.jpg','004.jpg','005.jpg','006.jpg','007.jpg','008.jpg','009.jpg','010.jpg','011.jpg','012.jpg'],        
-        layout:'bigImg',
-        icon:'folder.svg',
-    },
-                      
+        layout:'career',
+        icon:'folder.svg', 
+    }, 
+    {
+        id:'vision',
+        title:null,
+        browserTitle:'My Vision',
+        subtitle:null,
+        layout:'vision',
+        icon:'folder.svg', 
+    },                 
 
 ]

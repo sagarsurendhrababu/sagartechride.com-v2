@@ -12,6 +12,7 @@ export default function WinStartBar() {
             <ul>
                 <li>
                     <img src='../IMG/handburg.svg'/>
+                    <h6>START</h6>
                 </li>
             </ul>
             <ul>
@@ -21,7 +22,8 @@ export default function WinStartBar() {
                     payload:'profile',
                    })
                 }}>
-                    <img src='../IMG/profileIcon.svg'/>
+                    <img src='../IMG/profileIcon.svg'/> 
+                    <h6>Profile</h6>                   
                 </li>                 
                 <li onClick={()=>{
                    dispatch({
@@ -30,6 +32,7 @@ export default function WinStartBar() {
                    })
                 }}>
                     <img src='../IMG/docIcon.svg'/>
+                    <h6>Document</h6>
                 </li>                
                 <li onClick={()=>{
                    dispatch({
@@ -38,6 +41,7 @@ export default function WinStartBar() {
                    })
                 }}>
                     <img src='../IMG/imgIcon.svg'/>
+                    <h6>Gallery</h6>
                 </li>
                 <li onClick={()=>{
                    dispatch({
@@ -46,11 +50,13 @@ export default function WinStartBar() {
                    })
                 }}>
                     <img src='../IMG/settingIcon.svg'/>
+                    <h6>Settings</h6>
                 </li>
                 <li onClick={()=>{
                     document.querySelector('.welcomeScreen').style.visibility="visible";
                 }}>
                     <img src='../IMG/winPower.svg'/>
+                    <h6>Power</h6>
                 </li>                                
             </ul> 
         </div>
@@ -98,22 +104,51 @@ export default function WinStartBar() {
                     <img src='../IMG/recycle.svg'/>
                     <label>Recycle</label>
                  </li>
-                 <li>
-                    <img src='../IMG/skype.svg'/>
-                    <label>Skype</label>
+                 <li onClick={()=>{
+                   dispatch({
+                    type:'browserWinArray',
+                    payload:'works',
+                   })
+                }}>
+                    <img src='../IMG/my-works.svg'/>
+                    <label>My Works</label>
                  </li>
-                 <li onClick={()=>{window.open('https://www.linkedin.com/in/sagarsurendhrababu/')}}>
-                    <img src='../IMG/linkedin.svg'/>
-                    <label>LinedIn</label>
+                 <li onClick={()=>{
+                   dispatch({
+                    type:'browserWinArray',
+                    payload:'career',
+                   })
+                }}>
+                    <img src='../IMG/career.svg'/>
+                    <label>Career History</label>
                  </li>
-                 <li onClick={()=>{window.open('https://www.youtube.com/@sagarsurendhrababu9260/featured')}}>
-                    <img src='../IMG/youtube.svg'/>
-                    <label>Youtube</label>
+                 <li onClick={()=>{
+                   dispatch({
+                    type:'browserWinArray',
+                    payload:'vision',
+                   })
+                }}>
+                    <img src='../IMG/vision.svg'/>
+                    <label>My Vision</label>
                  </li> 
-                 <li onClick={()=>{window.open('https://drive.google.com/file/d/1Il7az32od0bzTO0YCk7XXkwUXZ63fXTt/view?usp=drive_link')}}>
+                 <li onClick={()=>{
+                   dispatch({
+                    type:'browserWinArray',
+                    payload:'resume',
+                   })
+                }}>
                     <img src='../IMG/resume.svg'/>
                     <label>My Resume</label>
-                 </li>                                  
+                 </li> 
+                 <li onClick={()=>{
+                   dispatch({
+                    type:'browserWinArray',
+                    payload:'profile',
+                   })
+                }}>
+                    <img src='../IMG/profile.svg'/>
+                    <label>Profile</label>
+                 </li>                                                   
               </ul>            
         </div>
     </div>

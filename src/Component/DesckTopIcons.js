@@ -5,13 +5,7 @@ export default function DesckTopIcons() {
     const [state,dispatch] = useContext(Context)
   return (
     <ul className='desckIcons'>
-        <li onDoubleClick={()=>{
-            dispatch({
-            type:'browserWinArray',
-            payload:'pc',
-            })
-        }}
-        onClick={()=>{
+        <li onClick={()=>{
             dispatch({
             type:'browserWinArray',
             payload:'pc',
@@ -20,14 +14,17 @@ export default function DesckTopIcons() {
         >
             <img src='../IMG/thisPC.svg'/>
             <h6>This PC</h6>
-        </li>        
-        <li onDoubleClick={()=>{
+        </li> 
+        <li onClick={()=>{
             dispatch({
             type:'browserWinArray',
-            payload:'games',
+            payload:'profile',
             })
-        }}
-        onClick={()=>{
+        }}>
+        <img src='../IMG/big-profile.svg'/>
+            <h6>Profile</h6>
+        </li>               
+        <li onClick={()=>{
             dispatch({
             type:'browserWinArray',
             payload:'games',
@@ -37,13 +34,7 @@ export default function DesckTopIcons() {
         <img src='../IMG/myGames.svg'/>
             <h6>Games</h6>
         </li>
-        <li onDoubleClick={()=>{
-            dispatch({
-            type:'browserWinArray',
-            payload:'resume',
-            })
-        }}
-        onClick={()=>{
+        <li onClick={()=>{
             dispatch({
             type:'browserWinArray',
             payload:'resume',
@@ -51,17 +42,11 @@ export default function DesckTopIcons() {
         }}        
         
         >
-        <img src='../IMG/myResume.svg'/>
+        <img src='../IMG/resume.svg'/>
             <h6>Resume</h6>
         </li> 
 
-        <li onDoubleClick={()=>{
-            dispatch({
-            type:'browserWinArray',
-            payload:'myworks',
-            })
-        }}
-        onClick={()=>{
+        <li onClick={()=>{
             dispatch({
             type:'browserWinArray',
             payload:'myworks',
@@ -72,13 +57,7 @@ export default function DesckTopIcons() {
             <h6>My Works</h6>
         </li> 
 
-        <li onDoubleClick={()=>{
-            dispatch({
-            type:'browserWinArray',
-            payload:'tutorials',
-            })
-        }}
-        onClick={()=>{
+        <li onClick={()=>{
             dispatch({
             type:'browserWinArray',
             payload:'tutorials',
@@ -86,7 +65,7 @@ export default function DesckTopIcons() {
         }}>
         <img src='../IMG/tutorialVideos.svg'/>
             <h6>Tutorial Videos</h6>
-        </li>                         
+        </li>                       
     </ul>
   )
 }

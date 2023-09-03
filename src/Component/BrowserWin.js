@@ -15,7 +15,7 @@ export default function BrowserWin(props) {
   ContentData.map(e=>{
     if(props.itemName === e.id){
       icons = e.icon;
-      browserTitle = e.title;
+      browserTitle = e.browserTitle;
     }
   });
 

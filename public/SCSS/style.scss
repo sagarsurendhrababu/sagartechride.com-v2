@@ -163,7 +163,7 @@
                 }
             }
         }
-    }
+    }   
     .WinStartBar{
         width: 550px;
         height: 90vh;
@@ -197,15 +197,43 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                position: absolute;
+                left: 0;
+                z-index: 1;
+                bottom: 0;
+                height: 100%;                
+                &:hover{
+                    width: 40%; 
+                    background-color: #22323A; 
+                    box-shadow: 3px 0 5px -5px #000;                  
+                    transition: all 300ms ease-in;                    
+                    &>ul{
+                        &>li{
+                            justify-content: flex-start;
+                            padding-left:20px; 
+                            cursor: pointer;                          
+                            &>h6{                                
+                                margin: 0 0 0 10px;
+                                display: block;
+                                font-weight: normal;
+                                animation: showLabel 1s ease;
+                            }
+                        }
+                    }
+                }
                 &>ul{
                     &>li{
                         justify-content: center;
                         gap: 0;
+                        &>h6{
+                            display: none;
+                        }
                     }
                 }                       
             }
             &:nth-child(2){
                 width: 46%;
+                margin-left: 10%;
                 overflow-y: scroll;
                 & ul{
                     & li{
@@ -248,6 +276,10 @@
             }                        
         }
     }
+    @keyframes showLabel {
+        0%{opacity: 0; transform: translateX(-35px);}
+        100%{opacity: 1; transform: translateX(0px);}
+    }     
     .browserWin{
         width: 80%;
         height: 80vh;
@@ -522,6 +554,9 @@
     align-items: center;
     color: #fff;
     z-index: 3;
+    &>video{
+        width: 50%;
+    }
     .bigVideoCloseBtn{
         font-size: 30px;
         color: #dbdbdb;
@@ -682,6 +717,11 @@
         }
     }
 }
+.myvisionPoints{
+    &>li{
+        list-style-position: inside;
+    }
+}
 }
 
 
@@ -703,7 +743,7 @@
             width: 15%;
             height: auto;
             justify-content: flex-start;
-            align-items: flex-start;
+            align-items: center;
         }
     } 
     .date-time{
@@ -742,10 +782,15 @@
                 }
                 &:nth-child(3){
                     width: 35%;
+                    overflow-y: auto;
                 }                        
             }
         }
-
+        .bigVideoBg{
+            &>video{
+                width: 90%;
+            }        
+        }
         .browserWin{
             .contentBrowserWin{
                 padding-top: 0!important;
@@ -813,11 +858,30 @@
         .desckIcons{
             flex-direction: column;
             &>li{
-                width: 15%;
+                width: 17%;
                 justify-content: flex-start;
             }
         }
-        
+        .headerBrowserWin{
+            & li{
+                padding:0 15px!important;
+            }
+        } 
+        .WinStartBar{
+            &>div{
+                &:nth-child(1){
+                    &:hover{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+        .winNavMinBrowser{
+            &>ul{
+                &>li{
+                    position: absolute;
+                }
+            }
+        }
     }
-
 }

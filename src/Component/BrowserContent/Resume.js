@@ -12,7 +12,6 @@ export default function Resume() {
   return (
     <div className='d-sm-flex infoNavBox'>
         <div className='col-sm-3 infoNav' id="mobileView">
-            <h5>My Resume</h5>
             <ul>
                 <li className={state.objective? 'activeTab' : ''}  onClick={()=>{dispatch({
                   type:'tabActionObjective',
