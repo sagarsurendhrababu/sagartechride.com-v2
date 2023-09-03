@@ -19,17 +19,7 @@ export default function BrowserWin(props) {
     }
   });
 
-
   let allBrowserWin;
-
-    useEffect(()=>{        
-        gsap.registerPlugin(Draggable);
-        Draggable.create(".browserWin", {
-          type:"y,x",
-          bounds: document.getElementById("displayContainer"),
-          inertia: true,
-        });                
-      }); 
 
       useEffect(()=>{                
         allBrowserWin = document.querySelectorAll('.browserWin');
@@ -46,6 +36,20 @@ export default function BrowserWin(props) {
           document.documentElement.requestFullscreen();   
           document.createElement('div').classList.add('maskDesktop');
         }
+
+        var screenWidth = window.innerWidth;
+        if (screenWidth > 1199){
+          var myDiv = document.querySelectorAll('.browserWin');
+          myDiv.forEach(e => {
+             e.classList.add("draggable");
+             gsap.registerPlugin(Draggable);
+             Draggable.create(".draggable", {
+               type:"y,x",
+               bounds: document.getElementById("displayContainer"),
+               inertia: true,
+             }); 
+          });
+        }     
 
       });  
 

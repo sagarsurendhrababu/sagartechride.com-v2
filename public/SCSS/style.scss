@@ -233,7 +233,7 @@
             }
             &:nth-child(2){
                 width: 46%;
-                margin-left: 10%;
+                margin-left: 12%;
                 overflow-y: scroll;
                 & ul{
                     & li{
@@ -723,10 +723,8 @@
     }
 }
 }
-
-
-
-@include media-breakpoint-down(md){
+////////////////////////////////medium/////////////////////////////
+@include media-breakpoint-down(xl){
 .App{
     .winNavLeft{
         &>a{
@@ -735,6 +733,14 @@
             }
         }
     } 
+    .browserWin{
+        width: 90%;
+        top: 5%;
+        left: 5%;
+    }
+    .infoCon{
+        padding: 7rem;
+    }
     .desckIcons{
         flex-direction: row;
     }
@@ -750,9 +756,12 @@
         display: none!important;
     }   
     .winNavRight{
-        &>a{
+        &>a{            
             line-height: 35px;
-            display: none!important;
+            margin-left: 5px;
+            &>i{
+                font-size: 17px;
+            }
             &:nth-child(4){
                 display: block!important;
             }
@@ -769,8 +778,26 @@
     } 
 }
 }
+////////////////////////////////small/////////////////////////////
 @include media-breakpoint-down(sm){
     .App{
+        .winDesktop{
+            height: calc(100vh - 47px);
+        }
+        .welcomeScreen{
+            &>span{
+                width: 80%;                
+            }
+            .actionBtns{
+                width: 80%;
+            }
+        }
+        .infoNavBox{
+            .infoCon{
+                padding: .5rem;
+            }
+        }
+
         .WinStartBar{
             width:100vw;
             &>div{
@@ -778,7 +805,8 @@
                     width: 15%;
                 }
                 &:nth-child(2){
-                    width: 50%;
+                    width: 50%; 
+                    margin-left: 15%;                   
                 }
                 &:nth-child(3){
                     width: 35%;
@@ -792,6 +820,9 @@
             }        
         }
         .browserWin{
+            width: 90%;
+            top: 5%;
+            left: 5%;
             .contentBrowserWin{
                 padding-top: 0!important;
             }
@@ -839,6 +870,10 @@
         } 
         .winNavRight{
             &>a{
+                margin-left: 5px;
+                &>i{
+                    font-size: 17px;
+                }
                 line-height: 35px;
                 display: none!important;
                 &:nth-child(4){

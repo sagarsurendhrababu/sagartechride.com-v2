@@ -139,7 +139,7 @@ export const ContentData =[
     {
         id:'games',
         title:'Games',
-        browserTitle:'Javascript',
+        browserTitle:'Games',
         subtitle:'Coming Soon...',
         icon:'myGames.svg',
     },  
