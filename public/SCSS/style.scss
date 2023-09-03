@@ -248,7 +248,8 @@
                 }      
             }
             &:nth-child(3){
-                width: 44%;
+                width: 46%;
+                overflow-y: auto;                
                 .social-media-icons{ 
                     list-style: none;  
                     padding: 10px; 
@@ -754,7 +755,14 @@
     } 
     .date-time{
         display: none!important;
-    }   
+    }  
+    .WinStartBar{
+        &>div{
+            &:nth-child(3){
+                width: 47%;
+            }                        
+        }
+    }     
     .winNavRight{
         &>a{            
             line-height: 35px;

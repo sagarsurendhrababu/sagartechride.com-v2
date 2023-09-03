@@ -11,7 +11,7 @@ export default function Resume() {
   const [state, dispatch] = useContext(Context);
   return (
     <div className='d-sm-flex infoNavBox'>
-        <div className='col-sm-3 infoNav' id="mobileView">
+        <div className='col-sm-4 infoNav' id="mobileView">
             <ul>
                 <li className={state.objective? 'activeTab' : ''}  onClick={()=>{dispatch({
                   type:'tabActionObjective',
@@ -43,7 +43,7 @@ export default function Resume() {
                 </li>
             </ul>
         </div>
-        <div className='col-sm-9 bg-light infoCon'>
+        <div className='col-sm-8 bg-light infoCon'>
             {state.objective? <Objective/> : ''} 
             {state.workExp? <WorkExperience/> : ''}
             {state.skills? <Skills/> : ''}

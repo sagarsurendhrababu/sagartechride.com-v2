@@ -148,7 +148,16 @@ export default function WinStartBar() {
                 }}>
                     <img src='../IMG/profile.svg'/>
                     <label>Profile</label>
-                 </li>                                                   
+                 </li>  
+                 <li onClick={()=>{
+                   dispatch({
+                    type:'browserWinArray',
+                    payload:'gallery',
+                   })
+                }}>
+                    <img src='../IMG/preview.svg'/>
+                    <label>Gallery</label>
+                 </li>                                                                   
               </ul>            
         </div>
     </div>
