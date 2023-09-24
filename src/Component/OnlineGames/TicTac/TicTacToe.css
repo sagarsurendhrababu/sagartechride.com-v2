@@ -1,0 +1,68 @@
+
+.gameCanvasTickTac{
+    width:300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 4px;
+    position: relative; 
+    box-sizing: border-box;   
+}
+.gameCanvasTickTac>span{
+    background:rgb(110, 110, 110);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size:50% 50%; 
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.gameCanvasTickTac>span:hover{
+    background:rgb(71, 71, 71);
+}
+.selected{
+    background-color: rgb(235, 54, 123)!important;
+    color: #000;   
+}
+.comSelected{    
+    background-color: rgb(40, 185, 221)!important;
+    color: #000;     
+}
+.result, .gameover{
+    position: absolute;
+    top: calc(50% - 70px);
+    left: 10%;
+    width: 80%;
+    height: 130px;
+    background-color: #292929;
+    border:4px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 2px 15px #333;
+    visibility: hidden;
+}
+.result{    
+    color: #eb367b;
+}
+.gameover{
+    color:#28b9dd;
+}
+.result>button, .gameover>button{
+    margin-top: 15px;
+    padding: 5px 15px;
+    background-color: rgb(58, 177, 11);
+    border:0;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;            
+}
+
+@media only screen and (min-width: 1180px)  {
+    .gameCanvasTickTac{
+        width:500px;
+        height:500px;
+    }
+}

@@ -17,6 +17,7 @@ import Opencart from './Opencart';
 import Html from './Html';
 import Career from './Career';
 import Vision from './Vision';
+import Games from './Games';
 import CommonLayout from './CommonLayout';
 import {ContentData} from '../../Reducer/ContentData';
 
@@ -103,7 +104,10 @@ export default function BrowserContent(props) {
     }   
     {
       layout === 'opencart'? <Opencart/> : ''
-    }                 
+    }   
+    {
+      layout === 'games'? <Games/> : ''
+    }                    
     </>
   )
 }

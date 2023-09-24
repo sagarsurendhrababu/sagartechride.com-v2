@@ -140,7 +140,8 @@ export const ContentData =[
         id:'games',
         title:'Games',
         browserTitle:'Games',
-        subtitle:'Coming Soon...',
+        subtitle:null,
+        layout:'games',
         icon:'myGames.svg',
     },  
     {
@@ -232,9 +233,9 @@ export const ContentData =[
                logo: 'egcgs.jpg',
                date: 'Oct 2023 to present',
                designation: 'UI/UX Specialist',
-               desc:'this is a desction area' ,
-               website: 'http://www.google.com',
-               linkedin: 'linedin.com',
+               desc:'Lead UX/UI Designer and Developer. Maintains And update frontend section of Applications.' ,
+               website: 'https://egcgs.theegc.com/',
+               linkedin: 'https://www.linkedin.com/company/egc-global-services-india-pvt-ltd',
             },
             {
                 logo: 'eqs.jpg',
