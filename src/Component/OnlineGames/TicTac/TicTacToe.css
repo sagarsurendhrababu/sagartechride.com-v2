@@ -1,68 +1,58 @@
 
-.gameCanvasTickTac{
-    width:300px;
-    height: 300px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 4px;
-    position: relative; 
-    box-sizing: border-box;   
-}
-.gameCanvasTickTac>span{
-    background:rgb(110, 110, 110);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size:50% 50%; 
-    cursor: pointer;
-    box-sizing: border-box;
-}
-.gameCanvasTickTac>span:hover{
-    background:rgb(71, 71, 71);
-}
-.selected{
-    background-color: rgb(235, 54, 123)!important;
-    color: #000;   
-}
-.comSelected{    
-    background-color: rgb(40, 185, 221)!important;
-    color: #000;     
-}
-.result, .gameover{
-    position: absolute;
-    top: calc(50% - 70px);
-    left: 10%;
-    width: 80%;
-    height: 130px;
-    background-color: #292929;
-    border:4px solid #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    box-shadow: 0px 2px 15px #333;
-    visibility: hidden;
-}
-.result{    
-    color: #eb367b;
-}
-.gameover{
-    color:#28b9dd;
-}
-.result>button, .gameover>button{
-    margin-top: 15px;
-    padding: 5px 15px;
-    background-color: rgb(58, 177, 11);
-    border:0;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;            
+ul,h2,h3,h4,h5,h6,p{padding: 0; margin: 0;}
+
+.gameBox{width: 20rem; height: 20rem; display: grid; grid-template-columns: auto auto auto; gap:3px;}
+.gameBoxClickDisable::before{content: ''; width: 20rem; height: 20rem; position: absolute;}
+.gameBox>li{width: 100%; height: 100%; background-color:#35832a; list-style: none; cursor: pointer;}
+.gameBox>li>span{visibility: hidden;}
+.selected{background-image: url(./crozz.png); background-size: 50% 50%; background-repeat: no-repeat; background-position: center; animation: iconEnable 300ms ease-out; }
+.comSelected{background-image: url(./circle.png); background-size: 50% 50%; background-repeat: no-repeat; background-position: center; animation: iconEnableCom 300ms ease-in; }
+
+@keyframes iconEnable {
+    0%{background-size: 0% 0%;}
+    100%{background-size: 50% 50%;}
 }
 
-@media only screen and (min-width: 1180px)  {
-    .gameCanvasTickTac{
-        width:500px;
-        height:500px;
-    }
+@keyframes iconEnableCom {
+    0%{background-size: 0% 0%; }
+    100%{background-size: 50% 50%;}
+} 
+@keyframes IndicatorSelect {
+    0%{background-color: #e6fa74;}
+    100%{background-color: #ffd650;}
+}  
+
+.psotionRela{position: relative;}
+
+.titleCanva{display: flex; justify-content: center; border-bottom: 1px solid #333; width: 100%; padding-bottom: 5px;}
+
+.gameScoreConsole{width: 20rem; height: auto; display: flex; flex-direction: column;}
+.titleCanva>p{color: #fff;   text-align: center; font-size: 18px; margin-bottom: 15px; }
+.starts{color: #ffc917;}
+.gameScore{width: 20rem; height: 50px; align-items: center; display: flex; list-style: none; margin-bottom: 10px;  border-bottom: 1px solid #333;}
+.gameScore li{flex:1; display: flex; color: beige; height: 100%; 
+flex-direction: column; justify-content: center; align-items: center; caret-color: transparent;}
+.gameScore>li:nth-child(4){background-color: #474747;}
+.gameScore li>h3{display: flex; flex-direction: column; align-items: center;}
+.gameScore li>h3>label{font-size: 12px; font-weight:normal;}
+.gameScore li>h3>span{color:#fff; display: flex; justify-content: center; font-size: 22px;  }
+
+.tryAgain{margin-top: 15px;}
+.declareBtn p{color: #dadada;   text-align: center; font-size: 12px; margin-top: 5px; }
+.declareBtn button{padding: 5px 15px; background-color:#ffcb19; border: 0px solid #000; border-radius: 2px; }
+.declareBtn{visibility: hidden; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+.gameBoxBanner{width: 20rem; z-index: 9; padding:2rem; box-sizing: border-box; height: 27rem;  position: absolute; background:#000; visibility: hidden;
+background-size: 400% 400%;  color: #fff; border-radius: 3px;  display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.gameBoxBanner h1{margin-bottom: 5px; text-align: center; font-weight: normal; }
+.gameBoxBanner p{display: flex; flex-direction: column; align-items: center; justify-content: center;  margin-bottom: 20px;}
+.gameBoxBanner h4{text-align: center; margin-bottom: 5px;  }
+.gameBoxBanner h2{display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.gameBoxBanner h2>span:nth-child(2){
+    font-size: 12px; 
 }
+.gameBoxBanner ul{list-style: none; width: 100%; display: flex;}
+.gameBoxBanner ul>li{width: 100%; display: flex; border-right: 0px solid #fff!important; padding: .5rem 1rem; flex-direction: column; justify-content: center; align-items: center; border: 1px solid #ffffff;}
+.gameBoxBanner ul>li:nth-child(3){border-right: 1px solid #fff!important;}
+.gameBoxBanner button{align-self: center; padding: 7px 14px; margin-top: 20px; cursor: pointer; background-color: #0b6319; color: #e6e6e6; border:none; border-radius: 3px;}
+.gameBoxBanner button:hover{color:#fff; background-color: #117a22;}

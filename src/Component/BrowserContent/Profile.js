@@ -5,7 +5,7 @@ import SocialMedia from './Profile/SocialMedia';
 import Vision from './Profile/Vision';
 import History from './Profile/History';
 import Goal from './Profile/Goal';
-import { Context } from '../../App';
+import { Context } from '../../Home';
 
 
 export default function LayoutSecond() {

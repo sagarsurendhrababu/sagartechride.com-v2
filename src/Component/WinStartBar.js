@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import Design from './Design';
 import Development from './Development';
 import Cms from './Cms';
-import { Context } from '../App';
+import { Context } from '../Home';
 
 export default function WinStartBar() {
     const [state,dispatch] = useContext(Context)

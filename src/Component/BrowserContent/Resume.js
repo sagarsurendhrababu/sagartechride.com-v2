@@ -5,7 +5,7 @@ import Skills from './Resume/Skills';
 import Portfolio from './Resume/Portfolio';
 import Education from './Resume/Education';
 
-import { Context } from '../../App';
+import { Context } from '../../Home';
 
 export default function Resume() {
   const [state, dispatch] = useContext(Context);

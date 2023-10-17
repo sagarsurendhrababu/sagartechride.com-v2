@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Context } from '../../App';
+import { Context } from '../../Home';
 import BigImg from '../BigImg';
 
 export default function Gallery(props) {

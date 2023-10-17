@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Context } from '../../App'
+import { Context } from '../../Home'
 
 export default function ThisPC() {
     const [state, dispatch] = useContext(Context);

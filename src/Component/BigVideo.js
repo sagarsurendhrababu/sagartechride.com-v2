@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Context } from '../App';
+import { Context } from '../Home';
 import { useReducer } from 'react';
 
 export default function BigVideo() {

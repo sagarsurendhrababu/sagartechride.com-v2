@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Context } from '../App'
+import { Context } from '../Home'
 import BrowserWin from './BrowserWin';
 import { Data } from '../Reducer/Data';
 import Videos from './Videos';

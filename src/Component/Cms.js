@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Context } from '../App';
+import { Context } from '../Home';
 
 export default function Cms() {
   const [state,dispatch] = useContext(Context);

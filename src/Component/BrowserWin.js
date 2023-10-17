@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react'
 import gsap from "gsap";
 import Draggable from "gsap/Draggable";
-import { Context } from '../App';
+import { Context } from '../Home';
 import {ContentData} from '../Reducer/ContentData';
 import { click } from '@testing-library/user-event/dist/click';
 import { Data } from '../Reducer/Data';

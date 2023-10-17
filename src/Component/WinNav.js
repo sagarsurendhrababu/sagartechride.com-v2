@@ -1,6 +1,6 @@
 import React, { useContext,useEffect, useState } from 'react'
 import WinStartBar from './WinStartBar';
-import { Context } from '../App';
+import { Context } from '../Home';
 import { Data } from '../Reducer/Data';
 import {ContentData} from '../Reducer/ContentData';
 
